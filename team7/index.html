@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=0">
+    <meta name="format-detection" content="telphone=no, email=no, address=no">
+    <title>Document</title>
+    <script>
+        document.documentElement.style.fontSize = window.innerWidth / 750 * 100 + 'px'
+    </script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="fonts/iconfont.css">
+    <link rel="stylesheet" href="js/swiper/swiper.min.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <section class='section swiper-container'>
+            <ul class='list swiper-wrapper'>
+                <li class='li swiper-slide'>
+                    <div>
+                        <header class='header'>
+                            <span>
+                                <i class="icon iconfont icon-fangdajing"></i>
+                                <input type="text" placeholder="面膜">
+                            </span>
+                            <span></span>
+                            <span>
+                                <dl>
+                                    <dt><i class="icon iconfont icon-shouqi-01"></i></dt>
+                                    <dd>分类</dd>
+                                </dl>
+                            </span>
+                        </header>
+                        <nav class='nav'>
+                            <div class='iscroll'>
+                                <img src="img/2.png" alt="">
+                                <ul class='point'>
+                                    <li class='active'><span>精选</span></li>
+                                    <li><span>时尚</span></li>
+                                    <li><span>国际</span></li>
+                                    <li><span>美妆</span></li>
+                                    <li><span>母婴</span></li>
+                                    <li><span>家具</span></li>
+                                    <li><span>数码</span></li>
+                                    <li><span>旅行</span></li>
+                                </ul>
+                            </div>
+                            <i class="icon iconfont icon-xiala"></i>
+                        </nav>
+                        <div class="main swiper-container">
+                            <ul class='ul swiper-wrapper'>
+                                <li class='li swiper-slide'>
+                                    <div>
+                                        <div class="banner">
+                                            <ul>
+                                                <li><img src="./img/banner.jpg" alt=""></li>
+                                            </ul>
+                                        </div>
+                                        <div class="pic">
+                                            <img src="./img/pic.jpg" alt="">
+                                        </div>
+                                        <div class="title">
+                                            <div class="content">
+                                                <dl>
+                                                    <dd class="iconfont icon-yonghu"></dd>
+                                                    <dt>女装馆</dt>
+                                                </dl>
+                                                <dl>
+                                                    <dd class="iconfont icon-yonghu"></dd>
+                                                    <dt>女装馆</dt>
+                                                </dl>
+                                                <dl>
+                                                    <dd class="iconfont icon-yonghu"></dd>
+                                                    <dt>女装馆</dt>
+                                                </dl>
+                                                <dl>
+                                                    <dd class="iconfont icon-yonghu"></dd>
+                                                    <dt>女装馆</dt>
+                                                </dl>
+                                                <dl>
+                                                    <dd class="iconfont icon-yonghu"></dd>
+                                                    <dt>女装馆</dt>
+                                                </dl>
+                                            </div>
+                                            <div class="content">
+                                                <dl>
+                                                    <dd class="iconfont icon-yonghu"></dd>
+                                                    <dt>女装馆</dt>
+                                                </dl>
+                                                <dl>
+                                                    <dd class="iconfont icon-yonghu"></dd>
+                                                    <dt>女装馆</dt>
+                                                </dl>
+                                                <dl>
+                                                    <dd class="iconfont icon-yonghu"></dd>
+                                                    <dt>女装馆</dt>
+                                                </dl>
+                                                <dl>
+                                                    <dd class="iconfont icon-yonghu"></dd>
+                                                    <dt>女装馆</dt>
+                                                </dl>
+                                                <dl>
+                                                    <dd class="iconfont icon-yonghu"></dd>
+                                                    <dt>女装馆</dt>
+                                                </dl>
+                                            </div>
+                                        </div>
+                                        <div class="pic">
+                                            <img src="./img/banner.jpg" alt="">
+                                        </div>
+                                    </div>
+
+                                </li>
+                                <li class='swiper-slide'>
+                                    时尚
+                                </li>
+                                <li class='swiper-slide'>
+                                    国际
+                                </li>
+                                <li class='swiper-slide'>
+                                    美妆
+                                </li>
+                                <li class='swiper-slide'>
+                                    母婴
+                                </li>
+                                <li class='swiper-slide'>
+                                    家具
+                                </li>
+                                <li class='swiper-slide'>
+                                    数码
+                                </li>
+                                <li class='swiper-slide'>
+                                    旅行
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class='li swiper-slide'>分类页面</li>
+                <li class='li swiper-slide'>购物车页面</li>
+                <li class='li swiper-slide'>个人中心</li>
+            </ul>
+        </section>
+        <footer class='footer'>
+            <dl class='active'>
+                <dt><i class="icon iconfont icon-shouye"></i></dt>
+                <dd>首页</dd>
+            </dl>
+            <dl>
+                <dt><i class="icon iconfont icon-fangdajing"></i></dt>
+                <dd>分类</dd>
+            </dl>
+            <dl>
+                <dt><i class="icon iconfont icon-gouwuche"></i></dt>
+                <dd>购物车</dd>
+            </dl>
+            <dl>
+                <dt><i class="icon iconfont icon-yonghu"></i></dt>
+                <dd>个人中心</dd>
+            </dl>
+        </footer>
+    </div>
+    <script src='js/swiper/swiper.min.js'></script>
+    <script src="js/iscroll/iscroll.js"></script>
+    <script src='js/jquery.js'></script>
+    <script>
+        var lis = $('.point>li'),
+            sum = 0;
+        for (var i = 0; i < lis.length; i++) {
+            sum += lis[i].offsetWidth;
+        }
+        $('.iscroll').width(parseInt(sum + 'px') + parseInt($('.iscroll img').width() + 'px'))
+        var myIscroll = new IScroll('.nav', {
+            scrollX: true,
+            scrollY: false
+        })
+        var lis = $('footer dl')
+        var swiper = new Swiper('.section', {
+            on: {
+                slideChangeTransitionStart: function() {
+                    var inx = this.activeIndex;
+                    for (var i = 0; i < lis.length; i++) {
+                        lis[i].classList.remove('active')
+                    }
+                    lis[inx].classList.add('active')
+                }
+            }
+        })
+        $('footer dl').each(function(i, val) {
+            val.onclick = function() {
+                swiper.slideTo(i)
+            }
+        })
+        var dls = $('.point li')
+        var Swiper = new Swiper('.main', {
+            on: {
+                slideChangeTransitionStart: function() {
+                    var inx = this.activeIndex;
+                    for (var i = 0; i < dls.length; i++) {
+                        dls[i].classList.remove('active')
+                    }
+                    dls[inx].classList.add('active')
+                }
+            }
+        })
+        $('.point li').each(function(i, val) {
+            val.onclick = function() {
+                Swiper.slideTo(i)
+                myIscroll.scrollToElement(this, 1000, true, 0)
+            }
+        })
+        new IScroll('li')
+    </script>
+</body>
+
+</html>
