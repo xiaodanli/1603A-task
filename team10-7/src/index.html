@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="swiper/swiper.css">
-    <link rel="stylesheet" href="fonts/iconfont.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./swiper/swiper.min.css">
+    <link rel="stylesheet" href="./fonts/iconfont.css">
+    <script src="./swiper/swiper.min.js"></script>
+    <script src="./jquery/jquery-2.1.1.min.js"></script>
     <script>
         document.documentElement.style.fontSize = window.innerWidth / 750 * 100 + 'px';
     </script>
@@ -17,28 +19,63 @@
 <body>
     <div class="wrap">
         <header>头部</header>
+
         <div class="main">
-            <div class="banner swiper-container">
-                <ul class="wraps swiper-wrapper">
-                    <li class="swiper-slide"><img src="img/4.jpg"></li>
-                    <li class="swiper-slide"><img src="img/2.jpg"></li>
-                    <li class="swiper-slide"><img src="img/3.jpg"></li>
-                    <li class="swiper-slide"><img src="img/1.jpg"></li>
-                </ul>
-                <ol class="page swiper-pagination">
-                </ol>
+            <div>
+                <div class="banner swiper-container">
+                    <ul class="wraps swiper-wrapper">
+                        <li class="swiper-slide"><img src="img/4.jpg"></li>
+                        <li class="swiper-slide"><img src="img/2.jpg"></li>
+                        <li class="swiper-slide"><img src="img/3.jpg"></li>
+                        <li class="swiper-slide"><img src="img/1.jpg"></li>
+                    </ul>
+                    <ol class="page swiper-pagination">
+                    </ol>
+                </div>
+                <div class="list">
+                    <span><i class="icon iconfont icon-paynumber"></i>品牌授权</span>
+                    <span><i class="icon iconfont icon-yinlezanting"></i>自营物流</span>
+                    <span><i class="icon iconfont icon-tongjitu111"></i>7天放心退</span>
+                    <span><i class="icon iconfont icon-gongzuo"></i>3亿注册</span>
+                </div>
+                <div class="money">
+                    <img src="img/money.jpg" alt="">
+                </div>
             </div>
-            <div class="list">
-                <span><i class="icon iconfont icon-paynumber"></i>品牌授权</span>
-                <span><i class="icon iconfont icon-yinlezanting"></i>自营物流</span>
-                <span><i class="icon iconfont icon-tongjitu111"></i>7天放心退</span>
-                <span><i class="icon iconfont icon-gongzuo"></i>3亿注册</span>
-            </div>
-            <div class="money">
-                <img src="img/money.jpg" alt="">
-            </div>
+            <div>分类</div>
+            <div>购物车</div>
+            <div>个人中心</div>
         </div>
-        <footer>底部</footer>
+        <footer>
+            <div class="footer">
+                <ul>
+                    <li>
+                        <dl>
+                            <dt><i class="iconfont icon-shouye"></i></dt>
+                            <dd>首页</dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt><i class="iconfont icon-fenlei-xuanzhong"></i></dt>
+                            <dd>分类</dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt><i class="iconfont icon-gouwuche"></i></dt>
+                            <dd>购物车</dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt><i class="iconfont icon-gerenxinxi"></i></dt>
+                            <dd>个人中心</dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+        </footer>
     </div>
     <script src="swiper/swiper.js"></script>
     <script src="js/jquery.js"></script>
@@ -49,6 +86,14 @@
             pagination: {
                 el: '.page',
             }
+        })
+
+        $('.footer>ul>li').on('click', function() {
+            var idx = $(this).index();
+            $(this).addClass('active').siblings().removeClass('active');
+            var w = $('.main>div').width();
+            console.log(w);
+            $('.main').css('transform', 'translate3d(-' + idx * w + 'px,0,0)')
         })
     </script>
 </body>
