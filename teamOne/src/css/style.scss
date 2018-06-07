@@ -181,3 +181,44 @@ footer {
     height: .45rem;
     background: green;
 }
+
+.banner {
+    width: 100%;
+}
+
+.smallSwiper {
+    width: 100%;
+    .swiper-wrapper,
+    .swiper-slide,
+    .swiper-slide img {
+        width: 100%;
+    }
+    ul {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    ul li {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        i {
+            display: inline-block;
+            width: 0.18rem;
+            margin: 0.025rem 0.05rem 0 0.025rem;
+        }
+        p {
+            font-size: 0.12rem;
+            flex: 1;
+            font-weight: 700;
+        }
+    }
+}
+
+.logo {
+    width: 100%;
+    img {
+        width: 100%;
+    }
+}

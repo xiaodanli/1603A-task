@@ -24,3 +24,8 @@ $('.roll li').on('tap', function() {
 $('.classify').on('tap', function() {
     alert('亲！这是低配唯品会，咱无分类项。')
 })
+
+var smallSwiper = new Swiper('.smallSwiper', {
+    loop: 1,
+    autoplay: true
+});
