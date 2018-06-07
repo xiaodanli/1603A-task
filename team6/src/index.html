@@ -17,24 +17,55 @@
 
 <body>
     <div class="wrap">
+
         <div class="all">
-            <div class="content">
+            <div class="content box">
                 sdjsdj
                 <header></header>
                 <main></main>
             </div>
+
             <div class="list" style="background:red">22222222
                 <p>5g4hjn8g4hngh</p>
             </div>
+
             <div class="shopping">333333</div>
+
             <div class="myself">444444</div>
         </div>
-        <footer></footer>
+
+        <footer>
+            <dl>
+                <dt><i class="iconfont icon-shouye"></i></dt>
+                <dd>首页</dd>
+            </dl>
+            <dl>
+                <dt><i class="iconfont icon-fenlei-xuanzhong"></i></dt>
+                <dd>分类</dd>
+            </dl>
+            <dl>
+                <dt><i class="iconfont icon-gouwuche"></i></dt>
+                <dd>购物车</dd>
+            </dl>
+            <dl>
+                <dt><i class="iconfont icon-icongerenzhongxin-01"></i></dt>
+                <dd>个人中心</dd>
+            </dl>
+        </footer>
     </div>
     <script src="js/swiper-4.1.6.min.js"></script>
     <script src="js/script.js"></script>
     <script src="js/jquery-1.8.3.min.js"></script>
     <script src="js/iscroll-probe.js"></script>
+
+    <script>
+        $('dl').on('click', function() {
+            var index = $(this).index();
+            console.log(index);
+            $(".all>div").eq(index).css("display", 'block').siblings().css('display', 'none');
+            $(this).css("color", "red").siblings().css("color", "#000");
+        })
+    </script>
 </body>
 
 </html>
