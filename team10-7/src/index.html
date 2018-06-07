@@ -6,32 +6,168 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./swiper/swiper.min.css">
+    <link rel="stylesheet" href="./fonts/iconfont.css">
+    <script>
+        document.documentElement.style.fontSize = window.innerWidth / 750 * 100 + 'px';
+    </script>
 </head>
 
 <body>
     <div class="wrap">
-        <header>头部</header>
+        <header>
+            唯品会
+        </header>
         <div class="main">
-            <div class="operate">
-                <ul>
-                    <li><img src="https://a4.vimage1.com/upload/flow/2018/05/29/106/15275616596915.jpg" alt=""></li>
-                    <li><img src="https://a2.vimage1.com/upload/flow/2018/05/22/138/15269786875124.jpg" alt=""></li>
-                    <li><img src="https://a4.vimage1.com/upload/flow/2018/05/29/100/15275815231657.jpg" alt=""></li>
-                    <li><img src="https://a4.vimage1.com/upload/flow/2018/05/22/190/15269788745661.jpg" alt=""></li>
-                    <li><img src="https://a4.vimage1.com/upload/flow/2018/05/22/110/15269789816830.jpg" alt=""></li>
-                    <li><img src="https://a4.vimage1.com/upload/flow/2018/05/29/106/15275616596915.jpg" alt=""></li>
-                    <li><img src="https://a2.vimage1.com/upload/flow/2018/05/22/138/15269786875124.jpg" alt=""></li>
-                    <li><img src="https://a4.vimage1.com/upload/flow/2018/05/29/100/15275815231657.jpg" alt=""></li>
-                    <li><img src="https://a4.vimage1.com/upload/flow/2018/05/22/190/15269788745661.jpg" alt=""></li>
-                    <li><img src="https://a4.vimage1.com/upload/flow/2018/05/22/110/15269789816830.jpg" alt=""></li>
+            <div>
+                <h3><input type="text" placeholder="面膜"><i class='icon iconfont icon-fangdajing'></i><span class='icon iconfont icon-gengduo-2'></span></h3>
+                <div class="nav">
+                    <ul>
+                        <li class='active'>6.16狂欢周</li>
+                        <li>精选</li>
+                        <li>时尚</li>
+                        <li>国际</li>
+                        <li>美妆</li>
+                        <li>母婴</li>
+                        <li>家用</li>
+                        <li>男装</li>
+                    </ul>
+                    <span class='icon iconfont icon-xiala'></span>
+                </div>
+                <div class="content swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class='swiper-slide'>
+                            <div class="banner swiper-container">
+                                <ul class="wraps swiper-wrapper">
+                                    <li class="swiper-slide"><img src="img/4.jpg"></li>
+                                    <li class="swiper-slide"><img src="img/2.jpg"></li>
+                                    <li class="swiper-slide"><img src="img/3.jpg"></li>
+                                    <li class="swiper-slide"><img src="img/1.jpg"></li>
+                                </ul>
+                                <ol class="page swiper-pagination">
+                                </ol>
+                            </div>
+                            <div class="list">
+                                <span><i class="icon iconfont icon-paynumber"></i>品牌授权</span>
+                                <span><i class="icon iconfont icon-yinlezanting"></i>自营物流</span>
+                                <span><i class="icon iconfont icon-tongjitu111"></i>7天放心退</span>
+                                <span><i class="icon iconfont icon-gongzuo"></i>3亿注册</span>
+                            </div>
+                            <div class="money">
+                                <img src="img/money.jpg" alt="">
+                            </div>
+                            <div class="operate">
+                                <ul>
+                                    <li><img src="https://a4.vimage1.com/upload/flow/2018/05/29/106/15275616596915.jpg" alt=""></li>
+                                    <li><img src="https://a2.vimage1.com/upload/flow/2018/05/22/138/15269786875124.jpg" alt=""></li>
+                                    <li><img src="https://a4.vimage1.com/upload/flow/2018/05/29/100/15275815231657.jpg" alt=""></li>
+                                    <li><img src="https://a4.vimage1.com/upload/flow/2018/05/22/190/15269788745661.jpg" alt=""></li>
+                                    <li><img src="https://a4.vimage1.com/upload/flow/2018/05/22/110/15269789816830.jpg" alt=""></li>
+                                    <li><img src="https://a4.vimage1.com/upload/flow/2018/05/29/106/15275616596915.jpg" alt=""></li>
+                                    <li><img src="https://a2.vimage1.com/upload/flow/2018/05/22/138/15269786875124.jpg" alt=""></li>
+                                    <li><img src="https://a4.vimage1.com/upload/flow/2018/05/29/100/15275815231657.jpg" alt=""></li>
+                                    <li><img src="https://a4.vimage1.com/upload/flow/2018/05/22/190/15269788745661.jpg" alt=""></li>
+                                    <li><img src="https://a4.vimage1.com/upload/flow/2018/05/22/110/15269789816830.jpg" alt=""></li>
 
+                                </ul>
+                            </div>
+                            <img class="news" src="./img/banners.png" alt="">
+                        </div>
+                        <div class='swiper-slide'>精选</div>
+                        <div class='swiper-slide'>时尚</div>
+                        <div class='swiper-slide'>国际</div>
+                        <div class='swiper-slide'>美妆</div>
+                        <div class='swiper-slide'>母婴</div>
+                        <div class='swiper-slide'>家用</div>
+                        <div class='swiper-slide'>男装</div>
+                    </div>
+                </div>
+            </div>
+            <div>分类</div>
+            <div>购物车</div>
+            <div>个人中心</div>
+        </div>
+        <footer>
+            <div class="footer">
+                <ul>
+                    <li>
+                        <dl>
+                            <dt><i class="iconfont icon-shouye"></i></dt>
+                            <dd>首页</dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt><i class="iconfont icon-fenlei-xuanzhong"></i></dt>
+                            <dd>分类</dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt><i class="iconfont icon-gouwuche"></i></dt>
+                            <dd>购物车</dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt><i class="iconfont icon-gerenxinxi"></i></dt>
+                            <dd>个人中心</dd>
+                        </dl>
+                    </li>
                 </ul>
             </div>
-            <img class="news" src="./img/banners.png" alt="">
-        </div>
-        <footer>底部</footer>
+        </footer>
     </div>
+    <script src="swiper/swiper.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src='./iscroll/iscroll.js'></script>
+    <script>
+        new Swiper('.banner', {
+            autoplay: true,
+            loop: true,
+            pagination: {
+                el: '.page',
+            }
+        })
+
+        $('.footer>ul>li').on('click', function() {
+            var idx = $(this).index();
+            $(this).addClass('active').siblings().removeClass('active');
+            var w = $('.main>div').width();
+            console.log(w);
+            $('.main').css('transform', 'translate3d(-' + idx * w + 'px,0,0)')
+        });
+        var sum = 0;
+        $.each($('.nav li'), function(i, v) {
+            sum += $(v).outerWidth(true);
+        })
+        $('.nav ul').width(sum + 30);
+        var myIscroll = new IScroll('.nav', {
+            scrollX: true,
+            scrollY: false,
+        });
+        myIscroll.refresh();
+
+        var mySwiper = new Swiper('.content', {
+            on: {
+                slideChangeTransitionStart: function() {
+                    var index = this.activeIndex;
+                    change(index);
+                }
+            }
+        });
+
+        function change(index) {
+            $('.nav ul li').eq(index).addClass('active').siblings().removeClass('active');
+        }
+
+        $('.nav li').on('click', function() {
+            var index = $(this).index();
+            mySwiper.slideTo(index);
+            change(index);
+        });
+    </script>
 </body>
 
 </html>
