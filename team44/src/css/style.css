@@ -79,6 +79,47 @@ header form .iconfont {
     font-size: .4rem;
 }
 
+.list {
+    width: 100%;
+    height: 40px;
+    display: flex;
+}
+
+.list dl {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24%;
+    height: 100%;
+}
+
+.list dl dt {
+    width: 28px;
+    height: 28px;
+    border: 1px solid #383838;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 28px;
+}
+
+.list dl dt i {
+    color: #424242;
+}
+
+.list dl dd {
+    font-size: .32rem;
+    margin-left: .14rem;
+    color: #414141;
+}
+
+.adImg {
+    width: 100%;
+}
+
+.adImg img {
+    width: 100%;
+}
+
 footer {
     width: 100%;
     height: 1rem;
