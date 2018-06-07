@@ -10,23 +10,66 @@
     <link rel="stylesheet" href="./fonts/iconfont.css">
     <link rel="stylesheet" href="./css/style.css">
     <script>
-        document.documentElement.style.fontSize = window.innerWidth / 750 * 100 + 'px';
+        document.documentElement.style.fontSize = window.innerWidth / 375 * 100 + 'px';
     </script>
 </head>
 
 <body>
     <div class="wrap">
         <header>
+            <div class="text">
+                <input type="text" placeholder="面膜"><a href="javascript:;">分类</a>
+            </div>
+            <nav class="conten">
+                <ul>
+                    <li class="on1"><img src="img/10.jpg" alt=""></li>
+                    <li class="on">
+                        精选
+                    </li>
+                    <li>时尚</li>
+                    <li>国际</li>
+                    <li>美妆</li>
+                    <li>母婴</li>
+                    <li>家具</li>
+                    <li>酒饮</li>
+                    <li>水产</li>
+                    <li>速食</li>
+                    <li>粮油</li>
+                    <li>轻食</li>
+                    <li>日百</li>
+                </ul>
+            </nav>
         </header>
-        <nav class="nav">
-        </nav>
+
         <div class="cont">
 
         </div>
         <footer></footer>
     </div>
+    <script src="js/bscroll.min.js"></script>
     <script src="./swiper/swiper.min.js"></script>
+    <script src="./js/jquery-2.1.1.min.js"></script>
+    <script>
+        var nav = document.querySelector('nav');
+        var ul = document.querySelector('ul');
+        var li = ul.querySelectorAll('li');
+        var num = 0;
+        for (let i = 0; i < $('li').length; i++) {
+            num += $('li').eq(i).innerWidth();
+            $('li').on('click', function() {
+                $(this).addClass('on').siblings().removeClass('on');
+                Scroll.scrollToElement(this, 500, true, true, 0)
+            })
+        }
 
+        $('ul').width(num);
+        ul.style.width = num + 'px';
+        var Scroll = new BScroll('.conten', {
+            scrollX: true,
+            scrollY: false,
+            click: true
+        });
+    </script>
 </body>
 
 </html>
