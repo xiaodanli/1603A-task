@@ -6,14 +6,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./fonts/iconfont.css">
+    <link rel="stylesheet" href="./swiper/swiper.min.css">
+    <script>
+        document.documentElement.style.fontSize = window.innerWidth / 750 * 100 + 'px';
+    </script>
 </head>
 
 <body>
     <div class="wrap">
-        <header>头部</header>
-        <div class="main">内容</div>
+        <header>
+            唯品会
+        </header>
+        <div class="main">
+            <h3><input type="text" placeholder="面膜"><i class='icon iconfont icon-fangdajing'></i><span class='icon iconfont icon-gengduo-2'></span></h3>
+            <div class="nav">
+                <ul>
+                    <li class='active'>6.16狂欢周</li>
+                    <li>精选</li>
+                    <li>时尚</li>
+                    <li>国际</li>
+                    <li>美妆</li>
+                    <li>母婴</li>
+                    <li>家用</li>
+                    <li>男装</li>
+                </ul>
+                <span class='icon iconfont icon-xiala'></span>
+            </div>
+            <div class="content swiper-container">
+                <div class="swiper-wrapper">
+                    <div class='swiper-slide'>6.16狂欢周</div>
+                    <div class='swiper-slide'>精选</div>
+                    <div class='swiper-slide'>时尚</div>
+                    <div class='swiper-slide'>国际</div>
+                    <div class='swiper-slide'>美妆</div>
+                    <div class='swiper-slide'>母婴</div>
+                    <div class='swiper-slide'>家用</div>
+                    <div class='swiper-slide'>男装</div>
+                </div>
+            </div>
+        </div>
         <footer>底部</footer>
     </div>
+    <script src='./jquery/jquery-2.1.1.min.js'></script>
+    <script src='./iscroll/iscroll.js'></script>
+    <script src='./swiper/swiper.min.js'></script>
+    <script>
+        var sum = 0;
+        $.each($('.nav li'), function(i, v) {
+            sum += $(v).outerWidth(true);
+        })
+        $('.nav ul').width(sum + 30);
+        var myIscroll = new IScroll('.nav', {
+            scrollX: true,
+            scrollY: false,
+        });
+        myIscroll.refresh();
+
+        var mySwiper = new Swiper('.content', {
+            on: {
+                slideChangeTransitionStart: function() {
+                    var index = this.activeIndex;
+                    change(index);
+                }
+            }
+        });
+
+        function change(index) {
+            $('.nav ul li').eq(index).addClass('active').siblings().removeClass('active');
+        }
+
+        $('.nav li').on('click', function() {
+            var index = $(this).index();
+            mySwiper.slideTo(index);
+            change(index);
+        });
+    </script>
 </body>
 
 </html>
