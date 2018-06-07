@@ -6,14 +6,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./swiper/swiper.min.css">
+    <link rel="stylesheet" href="./fonts/iconfont.css">
+    <script src="./swiper/swiper.min.js"></script>
+    <script src="./jquery/jquery-2.1.1.min.js"></script>
+    <script>
+        document.documentElement.style.fontSize = window.innerWidth / 750 * 100 + 'px';
+    </script>
 </head>
 
 <body>
     <div class="wrap">
         <header>头部</header>
-        <div class="main">内容</div>
-        <footer>底部</footer>
+
+        <div class="main">
+            <div class="index">
+                <div>首页</div>
+                <div>分类</div>
+                <div>购物车</div>
+                <div>个人中心</div>
+            </div>
+        </div>
+        <footer>
+            <div class="footer">
+                <ul>
+                    <li>
+                        <dl>
+                            <dt><i class="iconfont icon-shouye"></i></dt>
+                            <dd>首页</dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt><i class="iconfont icon-fenlei-xuanzhong"></i></dt>
+                            <dd>分类</dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt><i class="iconfont icon-gouwuche"></i></dt>
+                            <dd>购物车</dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt><i class="iconfont icon-gerenxinxi"></i></dt>
+                            <dd>个人中心</dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+        </footer>
     </div>
 </body>
+<script>
+    $('.footer>ul>li').on('click', function() {
+        var idx = $(this).index();
+        $(this).addClass('active').siblings().removeClass('active');
+        var w = $('.index>div').width();
+        console.log(w);
+        $('.index').css('transform', 'translate3d(-' + idx * w + 'px,0,0)')
+    })
+</script>
 
 </html>
