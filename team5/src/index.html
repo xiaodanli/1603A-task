@@ -18,7 +18,31 @@
 <body>
     <div class="wrap">
         <header>
-            头部
+            <div class="text">
+                <input type="text" placeholder="面膜">
+                <span>分类</span>
+            </div>
+            <nav class="conten">
+                <ul id="ul">
+                    <li class="on1">
+                        <img src="img/10.jpg" alt="">
+                    </li>
+                    <li class="on">
+                        精选
+                    </li>
+                    <li>时尚</li>
+                    <li>国际</li>
+                    <li>美妆</li>
+                    <li>母婴</li>
+                    <li>家具</li>
+                    <li>酒饮</li>
+                    <li>水产</li>
+                    <li>速食</li>
+                    <li>粮油</li>
+                    <li>轻食</li>
+                    <li>日百</li>
+                </ul>
+            </nav>
         </header>
         <section>
             <div class="swiper-container">
@@ -29,7 +53,7 @@
                                 <img src="img/banner.jpg">
                             </div>
                             <div class="lis">
-                                <ul>
+                                <ol class="uls">
                                     <li>
                                         <i class="iconfont icon-7tian1"></i><span>品牌授权</span>
                                     </li>
@@ -42,17 +66,31 @@
                                     <li>
                                         <i class="iconfont icon-zhifu-01"></i><span>3亿注册会员</span>
                                     </li>
-                                </ul>
+                                </ol>
                             </div>
                             <div class="hot">
                                 <img src="img/hot.jpg">
                             </div>
                         </div>
                         <div class="list">
-                            
+                            <div class="menu">
+                                <ol>
+                                    <li><img src="./img/1-1_03.jpg" alt="">女装馆</li>
+                                    <li><img src="./img/2_03.jpg" alt="">美妆馆</li>
+                                    <li><img src="./img/3_03.jpg" alt="">男装馆</li>
+                                    <li><img src="./img/4_05.jpg" alt="">母婴馆</li>
+                                    <li><img src="./img/5_07.jpg" alt="">今日惊喜</li>
+                                    <li><img src="./img/6_13.jpg" alt="">鞋包馆</li>
+                                    <li><img src="./img/7_15.jpg" alt="">运动馆</li>
+                                    <li><img src="./img/8_17.jpg" alt="">内衣馆</li>
+                                    <li><img src="./img/9_17.jpg" alt="">1元拼团</li>
+                                    <li><img src="./img/9-2_18.jpg" alt="">更多</li>
+                                </ol>
+                                <h1><img src="./img/pic1.png" alt=""></h1>
+                            </div>
                         </div>
                     </div>
-                    <div class="swiper-slide">分类</div>
+                    <div class="swiper-slide html_2">分类</div>
                     <div class="swiper-slide">购物车</div>
                     <div class="swiper-slide">个人中心</div>
                 </div>
@@ -93,21 +131,39 @@
             </dl>
         </footer>
     </div>
-</body>
-<script src="./swiper/swiper.min.js"></script>
-<script>
-    var mySwiper = new Swiper('.swiper-container',{
-        on:{
-            slideChange:function(){
-                var index = mySwiper.activeIndex;
-                $('footer dl').eq(index).addClass('bg').siblings().removeClass('bg');
-            }
+    <script src="./script/bscroll.min.js"></script>
+    <script src="./swiper/swiper.min.js"></script>
+    <script src="./script/jquery.min.js"></script>
+    <script>
+        var mySwiper = new Swiper('.swiper-container');
+        var num = 0;
+        for (let i = 0; i < $('#ul>li').length; i++) {
+            num += $('#ul>li').eq(i).innerWidth();
+            $('#ul>li').on('click', function() {
+                $(this).addClass('on').siblings().removeClass('on');
+                Scroll.scrollToElement(this, 500, true, true, 0)
+            })
         }
-    });
-    $('footer').on('click', 'dl', function(){
-        var idx = $(this).index();
-        $(this).addClass('bg').siblings().removeClass('bg');
-        mySwiper.slideTo(idx);
-    })
-</script>
+        $('#ul').width(num);
+        ul.style.width = num + 'px';
+        var Scroll = new BScroll('.conten', {
+            scrollX: true,
+            scrollY: false,
+            click: true
+        });
+        var mySwiper = new Swiper('.swiper-container',{
+            on:{
+                slideChange:function(){
+                    var index = mySwiper.activeIndex;
+                    $('footer dl').eq(index).addClass('bg').siblings().removeClass('bg');
+                }
+            }
+        });
+        $('footer').on('click', 'dl', function(){
+            var idx = $(this).index();
+            $(this).addClass('bg').siblings().removeClass('bg');
+            mySwiper.slideTo(idx);
+        })
+    </script>
+</body>
 </html>
