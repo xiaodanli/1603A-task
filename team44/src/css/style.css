@@ -135,6 +135,7 @@ footer ul li {
     color: orange;
 }
 
+<<<<<<< HEAD
 #list {
     width: 100%;
     height: auto;
@@ -163,4 +164,14 @@ footer ul li {
     width: 100%;
     height: auto;
     margin-top: .8rem;
+=======
+#banner .swiper-wrapper .swiper-slide {
+    width: 500px;
+    height: 240px;
+}
+
+#banner .swiper-wrapper .swiper-slide img {
+    width: 100%;
+    height: 240px;
+>>>>>>> lhy
 }
