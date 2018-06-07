@@ -134,3 +134,33 @@ footer ul li {
 .act {
     color: orange;
 }
+
+#list {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#list dl {
+    width: 20%;
+    text-align: center;
+    margin-top: .4rem;
+}
+
+#list dl dt {
+    width: .8rem;
+    height: .8rem;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+#list dl dd {
+    margin-top: .4rem;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    margin-top: .8rem;
+}
