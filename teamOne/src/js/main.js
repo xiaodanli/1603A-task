@@ -1,6 +1,16 @@
 var mySwiper = new Swiper('.bigSwiper', {
-
+    on: {
+        slideChange: function() {
+            var idx = this.activeIndex;
+            $('footer .foot dl').eq(idx).addClass('click').siblings().removeClass('click');
+        }
+    }
 });
+$('footer .foot').on('click', 'dl', function() {
+    var idx = $(this).index();
+    mySwiper.slideTo(idx);
+    $(this).addClass('click').siblings().removeClass('click');
+})
 
 var scroll = new BScroll('.one', {
     click: true,
