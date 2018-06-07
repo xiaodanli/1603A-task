@@ -11,3 +11,25 @@ body,
     height: 100%;
     overflow: hidden;
 }
+
+.operate {
+    width: 100%;
+}
+
+.operate ul {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.operate ul li {
+    width: 20%;
+}
+
+.operate ul li img {
+    width: 100%;
+}
+
+.news {
+    width: 100%;
+}
