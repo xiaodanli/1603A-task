@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>team4</title>
+    <link rel="stylesheet" href="css/swiper-4.1.6.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="fonts/iconfont.css">
+    <script src="js/flexible.js"></script>
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+            <form>
+                <i class="iconfont icon-fangdajing"></i>
+                <input type="text" placeholder="面膜">
+            </form>
+            <dl>
+                <dt><i class="iconfont icon-shouqi-01"></i></dt>
+                <dd>分类</dd>
+            </dl>
+        </header>
+        <nav class="nav">
+            <ul>
+                <li class="active">首页1</li>
+                <li>首页2</li>
+                <li>首页3</li>
+                <li>首页4</li>
+                <li>首页5</li>
+                <li>首页6</li>
+                <li>首页7</li>
+                <li>首页8</li>
+                <li>首页9</li>
+                <li>首页10</li>
+                <li>首页11</li>
+                <li>首页12</li>
+                <li>首页13</li>
+                <li>首页14</li>
+                <li>首页15</li>
+                <li>首页16</li>
+                <li>首页17</li>
+                <li>首页18</li>
+                <li>首页19</li>
+                <li>首页20</li>
+            </ul>
+        </nav>
+        <div class="swiper-container" id="swiper">
+
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide" style="background:yellow"></div>
+                <div class="swiper-slide" style="background:blue"></div>
+                <div class="swiper-slide" style="background:skyblue"></div>
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide" style="background:yellow"></div>
+                <div class="swiper-slide" style="background:blue"></div>
+                <div class="swiper-slide" style="background:skyblue"></div>
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide" style="background:yellow"></div>
+                <div class="swiper-slide" style="background:blue"></div>
+                <div class="swiper-slide" style="background:skyblue"></div>
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide" style="background:yellow"></div>
+                <div class="swiper-slide" style="background:blue"></div>
+                <div class="swiper-slide" style="background:skyblue"></div>
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide" style="background:yellow"></div>
+                <div class="swiper-slide" style="background:blue"></div>
+                <div class="swiper-slide" style="background:skyblue"></div>
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide" style="background:yellow"></div>
+                <div class="swiper-slide" style="background:blue"></div>
+                <div class="swiper-slide" style="background:skyblue"></div>
+
+            </div>
+        </div>
+        <footer>
+            <ul>
+                <li class="act"><i class="iconfont icon-shouye"></i>首页</li>
+                <li class="act1"><i class="iconfont icon-tianmao1"></i>分类</li>
+                <li class="act2"><i class="iconfont icon-gouwuche"></i>购物车</li>
+                <li class="act3"><i class="iconfont icon-geren"></i>个人中心</li>
+            </ul>
+        </footer>
+    </div>
+</body>
+<script src="js/jquery.min.js"></script>
+<script src="js/swiper-4.1.6.min.js"></script>
+<script src="js/bscroll.min.js"></script>
+<script>
+    var mySwiper = new Swiper('#swiper', {
+        on: {
+            slideChange: function() {
+                var ind = mySwiper.activeIndex;
+                $('.nav ul li').eq(ind).addClass('active').siblings().removeClass();
+            }
+        },
+        touchMoveStopPropagation: false
+    })
+    $('.nav ul li').on('click', function() {
+        mySwiper.slideTo($(this).index())
+    })
+    var sum = 0;
+    $('.nav>ul>li').each(function(i, v) {
+        sum += $(v).innerWidth()
+    });
+    $('.nav>ul').width(sum + "px");
+    var scroll = new BScroll('.nav', {
+        scrollX: true,
+        scrollY: false,
+        click: true
+    });
+    $('.nav>ul').on('click', 'li', function() {
+        $(this).addClass('bg').siblings().removeClass('bg');
+        scroll.scrollToElement(this, 1000, true);
+    })
+    $('footer ul li').on('click', function() {
+        $(this).css('color', "orange").siblings().css('color', "#ccc");
+        $('nav').css('display', "none");
+        $('.swiper-slide').css('display', "none");
+    })
+    $('.act').on('click', function() {
+        $('nav').css('display', "block");
+        $('.swiper-slide').css('display', "block");
+    })
+</script>
+
+</html>
