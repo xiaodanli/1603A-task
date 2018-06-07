@@ -18,23 +18,71 @@ html,
     display: flex;
     flex-direction: column;
 }
-header{
+
+header {
     width: 100%;
     height: .9rem;
     flex-shrink: 0;
     border-bottom: 1px solid #ccc;
 }
-section,.swiper-container{
+
+section,
+.swiper-container {
     width: 100%;
     height: 100%;
     overflow: hidden;
     flex-grow: 1;
 }
-.swiper-wrapper,.swiper-wrapper .swiper-slide{
+
+.list {
+    width: 100%;
+}
+
+.menu {
+    width: 100%;
+}
+
+.menu ul {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu ul li {
+    width: 20%;
+    text-align: center;
+    font-size: .13rem;
+    color: #8b8d8c;
+    margin-top: .2rem;
+}
+
+.menu ul li img {
+    display: block;
+    width: 65%;
+    margin: 0 auto;
+    margin-bottom: .07rem;
+}
+
+.menu ul li img:first-child {
+    width: 70%;
+}
+
+.list h1 {
+    width: 100%;
+    margin-top: .12rem;
+}
+
+.list h1 img {
+    width: 100%;
+}
+
+.swiper-wrapper,
+.swiper-wrapper .swiper-slide {
     width: 100%;
     height: 100%;
 }
-footer{
+
+footer {
     width: 100%;
     height: .6rem;
     flex-shrink: 0;
