@@ -29,25 +29,39 @@ header {
 .text {
     width: 100%;
     height: .35rem;
-    padding: 0 5%;
     margin: .05rem 0;
+    display: flex;
+    align-items: center;
+    padding: 0 .1rem;
+    box-sizing: border-box
 }
 
-.text>input {
+.text form {
     display: inline-block;
-    width: 75%;
-    height: 100%;
+    width: 85%;
+    height: 90%;
     text-indent: 1em;
     background: #E8E8E8;
     border: none;
     border-radius: .05rem;
     margin-right: 5%;
+    display: flex;
+    align-items: center;
 }
-
-.text>a {
-    color: #898989;
+.text form input{
+    border: 0;
+    background: 0;
+    padding-left: .04rem;
+    font-size: .16rem;
 }
-
+.text p{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: .14rem;
+    color: #666;
+}
 nav {
     width: 100%;
     height: .4rem;
