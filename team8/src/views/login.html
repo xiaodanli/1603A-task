@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/home.css">
+</head>
+
+<body>
+
+    <div class="big">
+        <input type="text" placeholder="账号" class="user">
+        <input type="text" placeholder="密码" class="pwd">
+        <input type="button" class="btn" value="登录">
+    </div>
+    <div class="mask">
+        <div class="list">
+            <h2>登录失败</h2>
+            <input type="button" value="确定" id="success">
+        </div>
+    </div>
+
+</body>
+
+</html>
+<script src="../js/lib/require.js"></script>
+<script src="../js/main.js"></script>
+<script>
+    require(["login"]);
+</script>
