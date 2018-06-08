@@ -184,6 +184,160 @@ section {
   overflow: auto;
 }
 
+section .slide1 {
+  overflow-y: scroll;
+}
+
+section .slide1 #nav {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+}
+
+section .slide1 #nav .operate {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+section .slide1 #nav .operate dl {
+  width: 20%;
+  height: auto;
+  text-align: center;
+  margin-top: .1rem;
+}
+
+section .slide1 #nav .operate dl dt {
+  width: .5rem;
+  height: .5rem;
+  border-radius: 50%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+section .slide1 #nav .operate dl dt i {
+  font-size: .3rem;
+  line-height: .5rem;
+}
+
+section .slide1 #nav .operate dl dd {
+  line-height: .4rem;
+}
+
+section .slide1 #nav .operate dl:nth-child(1) dt {
+  background: #facee9;
+}
+
+section .slide1 #nav .operate dl:nth-child(1) .iconfont {
+  color: #ffedef;
+}
+
+section .slide1 #nav .operate dl:nth-child(2) dt {
+  background: #f1cbb8;
+}
+
+section .slide1 #nav .operate dl:nth-child(2) .iconfont {
+  color: #ddf;
+}
+
+section .slide1 #nav .operate dl:nth-child(3) dt {
+  background: #dff;
+}
+
+section .slide1 #nav .operate dl:nth-child(3) .iconfont {
+  color: #d0f;
+}
+
+section .slide1 #nav .operate dl:nth-child(4) dt {
+  background: #a0cde4;
+}
+
+section .slide1 #nav .operate dl:nth-child(4) .iconfont {
+  color: #09f;
+}
+
+section .slide1 #nav .operate dl:nth-child(5) dt {
+  background: #c9e3fe;
+}
+
+section .slide1 #nav .operate dl:nth-child(5) .iconfont {
+  color: #19f;
+}
+
+section .slide1 #nav .operate dl:nth-child(6) dt {
+  background: #e7defb;
+}
+
+section .slide1 #nav .operate dl:nth-child(6) .iconfont {
+  color: #0ff;
+}
+
+section .slide1 #nav .operate dl:nth-child(7) dt {
+  background: #fde1bc;
+}
+
+section .slide1 #nav .operate dl:nth-child(7) .iconfont {
+  color: #0df;
+}
+
+section .slide1 #nav .operate dl:nth-child(8) dt {
+  background: #f6f1b9;
+}
+
+section .slide1 #nav .operate dl:nth-child(8) .iconfont {
+  color: #0df;
+}
+
+section .slide1 #nav .operate dl:nth-child(9) dt {
+  background: #fce3cf;
+}
+
+section .slide1 #nav .operate dl:nth-child(9) .iconfont {
+  color: #0df;
+}
+
+section .slide1 #nav .operate dl:nth-child(10) dt {
+  background: #ececec;
+}
+
+section .slide1 #nav .operate dl:nth-child(10) .iconfont {
+  color: #0df;
+}
+
+section .slide1 #nav .banner {
+  width: 100%;
+  height: auto;
+}
+
+section .slide1 #nav .banner dl {
+  width: 100%;
+  height: auto;
+}
+
+section .slide1 #nav .banner dl dd {
+  width: 100%;
+  height: .5rem;
+  line-height: .5rem;
+  text-align: center;
+  font-size: .2rem;
+  color: #f061df;
+}
+
+section .slide1 #nav .banner dl dt {
+  width: 100%;
+  height: auto;
+}
+
+section .slide1 #nav .banner dl dt img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 .bigSwiper,
 .swiper-wrapper,
 .li {
