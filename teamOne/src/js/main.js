@@ -3,6 +3,9 @@ var mySwiper = new Swiper('.bigSwiper', {
         slideChange: function() {
             var idx = this.activeIndex;
             $('footer .foot dl').eq(idx).addClass('click').siblings().removeClass('click');
+            console.log(idx);
+            $('#ul>li').eq(idx).addClass('active');
+            $('#ul>li').eq(idx).siblings().removeClass('active');
         }
     }
 });
