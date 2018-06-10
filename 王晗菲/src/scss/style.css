@@ -1,0 +1,16 @@
+body {
+    width: 100%;
+    display: flex;
+}
+
+.box {
+    width: 500px;
+    height: 70px;
+    margin: 50px auto;
+    display: flex;
+}
+
+.box img {
+    width: 100px;
+    height: 70px;
+}
