@@ -1,0 +1,1 @@
+new Swiper(".big",{loop:!0});
