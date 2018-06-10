@@ -1,0 +1,26 @@
+html,
+body {
+    background: pink;
+    overflow: hidden;
+}
+
+.wrap {
+    color: red;
+}
+
+* {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+}
+
+.swiper-container,
+.swiper-wrapper,
+.swiper-slide {
+    width: 100%;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
