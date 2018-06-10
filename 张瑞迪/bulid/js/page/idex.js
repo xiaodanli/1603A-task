@@ -1,0 +1,1 @@
+$(function(){new Swiper("swiper-container",{autoplay:!0,pagination:{el:"swiper-paigation"}})});
