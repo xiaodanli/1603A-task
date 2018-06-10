@@ -1,5 +1,4 @@
-var gulp = require('gulp');
-<<<<<<< HEAD
+var gulp = require('gulp'); 
 var sass = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
 var uglify = require('gulp-uglify');
@@ -13,9 +12,7 @@ var path = require('path');
 var clean = require('gulp-clean');
 var sequence = require('gulp-sequence');
 var url = require('url');
-var datajson = require('./data/data.json');
-var babel = require('gulp-babel');
-
+var datajson = require('./data/data.json'); 
 //起服务
 gulp.task('server', function() {
     gulp.src('build')
@@ -115,36 +112,3 @@ gulp.task('swipercss', function() {
 })
 
 gulp.task('default', ['devSass', 'watch', 'server'])
-
-gulp.task('build', function(cb) {
-    sequence('clean', ['buildSass', 'swipercss'], 'uglify', 'htmlmin', cb)
-=======
-var sass = require('gulp-sass'); //编译sass
-var autoprefixer = require('gulp-autoprefixer'); //自动添加前缀
-var mincss = require('gulp-clean-css') //压缩css
-var htmlmin = require('gulp-htmlmin'); //压缩html文件
-var server = require('gulp-webserver'); //起服务
-var rev = require('gulp-rev'); //添加md5路径
-var collector = require('gulp-rev-collector'); //替换路径
-var url = require('url');
-var path = require('path');
-var fs = require('fs');
-//var swpreData = require('./data/data.json') //引入json文件
-var sequence = require('gulp-sequence'); //设置gulp任务的执行顺序
-
-
-gulp.task('server', function() {
-    gulp.src('src')
-        .pipe(server({
-            port: 8080,
-            open: true,
-            livereload: true
-                // middleware: function(req, res, next) {
-
-            // }
-        }));
-});
-gulp.task('srt', function() {
-    console.log(11);
->>>>>>> 54b443c70adc80c7113501dac3db6d6852552bfa
-})

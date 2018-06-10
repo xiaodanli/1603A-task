@@ -1,3 +1,3 @@
-var mySwiper = new Swiper('.big', {
-
+new Swiper(".big", {
+	loop:true
 })

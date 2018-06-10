@@ -1,8 +1,7 @@
 $(function() {
-    new Swiper('swiper-container', {
-        autoplay: true,
+    new Swiper('.swiper-container', {
         pagination: {
-            el: "swiper-paigation"
+            el: ".swiper-pagination"
         }
     })
 })

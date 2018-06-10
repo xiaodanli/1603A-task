@@ -25,16 +25,13 @@ var options = {
     "minifyJS": true,
     "mibifyCss": true
 };
-gulp
 
 gulp.task('server', function() {
-    gulp.src('./bulid')
+    gulp.src('bulid')
         .pipe(server({
-            port: 9080,
-            open: true,
+            port: 9080, 
             livereload: true,
-            middleware: function(req, res, next) {
-                console.log(req.url);
+            middleware: function(req, res, next) { 
                 var Url = url.parse(req.url).pathname;
                 if (Url === '/favicon.ico') {
                     return false;
@@ -52,7 +49,7 @@ gulp.task('server', function() {
 
 // 克隆 html
 gulp.task("html", function() {
-    gulp.src(['./rev/css/*.json', './src/*.html'])
+    return gulp.src(['rev/**/*.json', 'src/**/*.html'])
         .pipe(collector({
             replaceReved: true
         }))
@@ -62,35 +59,33 @@ gulp.task("html", function() {
 
 // 自己写的 js文件
 gulp.task("js", function() {
-    gulp.src(["./src/js/*.js", "!./src/js/*.min.js"])
+    return gulp.src("src/js/**/*.js")
         .pipe(uglify())
-        .pipe(concat('all.min.js'))
-        .pipe(rev())
-        .pipe(gulp.dest('./bulid/js'))
-        .pipe(collector())
-        .pipe(gulp.dest('./rev/js'))
+        .pipe(gulp.dest('bulid/js'))
 });
 
-// js 库
-gulp.task("copyjs", function() {
-    gulp.src('./src/js/*.min.js')
-        .pipe(gulp.dest('./bulid/js'))
-        .pipe(gulp.dest('./rev/js'))
-});
 // 清空！
 gulp.task("clean", function() {
-    gulp.src('./bulid')
+    return gulp.src('./bulid')
         .pipe(clean())
 })
 gulp.task("img", function() {
-    gulp.src('./src/img/*.jpg')
+    gulp.src('./src/img/*')
         .pipe(gulp.dest("./bulid/img"))
 });
+
+gulp.task("mincss", function() {
+    gulp.src('./src/css/*.css')
+        .pipe(gulp.dest("./bulid/css"))
+});
+
 // 克隆css   并且加密
 gulp.task("css", function() {
-    gulp.src('./src/css/*.scss')
+    return gulp.src('./src/css/*.scss')
         .pipe(sass())
-        .pipe(autoprefixer())
+        .pipe(autoprefixer({
+            browsers:["last 2 versions","Android >= 4.0"]
+        }))
         .pipe(rev())
         .pipe(gulp.dest('./bulid/css'))
         .pipe(rev.manifest())
@@ -98,5 +93,5 @@ gulp.task("css", function() {
 })
 
 gulp.task('default', function(ck) {
-    sequence("clean", ["css", "js", "copyjs", "img"], "html", "server", ck)
+    sequence("clean", ["css", "js", "img","mincss"], "html", "server", ck)
 })

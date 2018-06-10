@@ -54,7 +54,7 @@ var options = {
     minifyCSS: true
 }
 gulp.task('bulidHtml', function() {
-    gulp.src('src/**/*.html')
+    gulp.src(['rev/**/*.json','src/**/*.html'])
         .pipe(collector({
             replaceReved: true
         }))
@@ -68,9 +68,9 @@ gulp.task("clean", function() {
 })
 
 gulp.task("watch", function() {
-        gulp.watch("src/scss/*.scss", ["css"])
-    })
-    //起服务
+    gulp.watch("src/scss/*.scss", ["css"])
+})
+//起服务
 gulp.task('server', function() {
     gulp.src('src')
         .pipe(server({

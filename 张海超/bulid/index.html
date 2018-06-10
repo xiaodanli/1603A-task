@@ -1,11 +1,1 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="X-UA-Compatible" content="ie=edge"><title>Document</title><link rel="stylesheet" href="css/swiper-4.1.6.min.css"><link rel="stylesheet" href="css/style.css"><script src="js/swiper-4.1.6.min.js"></script></head><body><div class="wrap"><div class="banner"><div class="swiper-container big"><div class="swiper-wrapper"></div></div></div></div><script src="js/jquery.min.js"></script><script src="js/main.js"></script><script>$.ajax({
-            url: '/api/list',
-            dataType: "json",
-            success: function(res) {
-                var str = '';
-                res.forEach(function(file) {
-                    str += `<div class="swiper-slide"><img src="img/${file.pic}" alt=""></div>`
-                })
-                $('.swiper-wrapper').html(str);
-            }
-        })</script></body></html>
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="X-UA-Compatible" content="ie=edge"><title>Document</title><link rel="stylesheet" href="css/style-5942396955.css"><link rel="stylesheet" href="css/swiper-4.1.6.min.css"></head><body><div class="wrap"><div class="swiper-container big"><div class="swiper-wrapper"></div></div></div><script src="js/swiper-4.1.6.min.js"></script><script src="js/jquery.min.js"></script><script>$.ajax({url:"/api/list",dataType:"json",success:function(i){var a="";i.forEach(function(i){a+='<div class="swiper-slide"><img src="'+i.pic+'" alt=""></div>'}),$(".swiper-wrapper").append(a)}}),new Swiper(".big",{loop:!0})</script></body></html>
