@@ -1,0 +1,1 @@
+"use strict";$(function(){$.ajax({url:"/api/swiper",dataType:"json",success:function(s){console.log(s);var a="";s.forEach(function(s,i){a+='<li class="swiper-slide"><img src="'+s.url+'"></li>'}),$(".list").html(a),new Swiper(".wrap",{autoplay:3e3})}})});
