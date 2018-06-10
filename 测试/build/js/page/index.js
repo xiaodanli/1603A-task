@@ -1,1 +1,0 @@
-"use strict";$(function(){$.ajax({url:"/api/swiper",dataType:"json",success:function(r){var o;console.log(r),o="",r.forEach(function(r,e){o+='<div class="swiper-slide"><img src="'+r.url+'"></div>'}),console.log(o),$(".swiper-wrapper").html(o),new Swiper(".swiper-container",{autoplay:3e3})},error:function(r){console.warn(r)}})});
