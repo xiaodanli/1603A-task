@@ -1,68 +1,121 @@
-@import "common.scss";
-.wrap {
-    width: 100%;
-    height: 100%;
-    background: pink;
-    display: flex;
-    flex-direction: column;
-}
-
-header {
-    width: 100%;
-    height: pxTorem(45px);
-    background: #06C1AE;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    >h2 {
-        width: 16%;
-        font-size: pxTorem(18px);
-        color: #FFF;
-        margin: 0 pxTorem(1px);
-        >i.iconfont {
-            font-size: pxTorem(14px);
-            color: #FFF;
-        }
-    }
-    form {
-        flex: 1;
-        background: #05A494;
-        height: 70%;
-        display: flex;
-        align-items: center;
-        margin-top: pxTorem(1px);
-        >i.iconfont {
-            font-size: pxTorem(17px);
-            color: #FFF;
-            padding: 0 pxTorem(10px);
-        }
-        >input {
-            width: 100%;
-            height: 100%;
-            color: #FFF;
-            font-size: pxTorem(14px);
-        }
-    }
-    >div {
-        width: 12%;
-        text-align: center;
-        color: #FFF;
-        >i.iconfont {
-            color: #FFF;
-            font-size: pxTorem(18px);
-        }
-    }
-}
-
-section {
-    flex: 1;
-    background: skyblue;
-    overflow: auto;
-}
-
-.banner {
-    width: 100%;
-    >img {
-        width: 100%;
-    }
-}
+            @import "common.scss";
+            .wrap {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+            }
+            
+            header {
+                width: 100%;
+                height: pxTorem(45px);
+                background: #06C1AE;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                >h2 {
+                    width: 16%;
+                    font-size: pxTorem(18px);
+                    color: #FFF;
+                    margin: 0 pxTorem(1px);
+                    >i.iconfont {
+                        font-size: pxTorem(14px);
+                        color: #FFF;
+                    }
+                }
+                form {
+                    flex: 1;
+                    background: #05A494;
+                    height: 70%;
+                    display: flex;
+                    align-items: center;
+                    margin-top: pxTorem(1px);
+                    >i.iconfont {
+                        font-size: pxTorem(17px);
+                        color: #FFF;
+                        padding: 0 pxTorem(10px);
+                    }
+                    >input {
+                        width: 100%;
+                        height: 100%;
+                        color: #FFF;
+                        font-size: pxTorem(14px);
+                    }
+                }
+                >div {
+                    width: 12%;
+                    text-align: center;
+                    color: #FFF;
+                    >i.iconfont {
+                        color: #FFF;
+                        font-size: pxTorem(18px);
+                    }
+                }
+            }
+            
+            section {
+                flex: 1;
+                background: skyblue;
+                overflow: auto;
+            }
+            
+            .banner {
+                width: 100%;
+                >img {
+                    width: 100%;
+                    overflow: hidden;
+                    overflow-y: auto;
+                }
+                .footlist {
+                    width: 100%;
+                    padding-left: pxTorem(10px);
+                    h2 {
+                        width: 100%;
+                        line-height: pxTorem(45px);
+                        font-size: pxTorem(16px);
+                        border-bottom: solid #ccc pxTorem(1px);
+                    }
+                    dl {
+                        display: flex;
+                        padding: pxTorem(5px) 0;
+                        border-bottom: solid #ccc pxTorem(1px);
+                        dt {
+                            width: pxTorem(90px);
+                            text-align: center;
+                            img {
+                                width: 100%;
+                            }
+                        }
+                        dd {
+                            flex: 1;
+                            padding-left: pxTorem(10px);
+                            h6 {
+                                line-height: pxTorem(25px);
+                                font-size: pxTorem(14px);
+                            }
+                            >p {
+                                line-height: pxTorem(25px);
+                            }
+                            .bottom {
+                                display: flex;
+                                justify-content: space-between;
+                                margin-top: pxTorem(15px);
+                                .right {
+                                    padding-right: pxTorem(25px);
+                                }
+                                .left {
+                                    display: flex;
+                                    align-items: center;
+                                    span {
+                                        color: #44D0C2;
+                                        padding-right: pxTorem(5px);
+                                        b {
+                                            font-size: pxTorem(18px);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
