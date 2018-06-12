@@ -16,8 +16,23 @@
 
 <body>
     <div class="wrap">
-        <header>头部</header>
+        <header class="navbar">
+            <div class="left">
+                北京<span><i class="icon iconfont icon-xiangxia"></i></span>
+            </div>
+            <div class="search">
+                <span><i class="icon iconfont icon-fangdajing"></i></span>
+                <input type="text" placeholder="输入商家/品类/商圈">
+            </div>
+            <div class="right">
+                <p><i class="icon iconfont icon-icongerenzhongxin-01"></i></p>我的
+            </div>
+        </header>
         <div class="main">
+            <div class="lip">
+                <img src="http://ms0.meituan.net/touch/img/download_banner.png" class="img-box">
+            </div>
+
             <div class="nav">
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
@@ -89,26 +104,29 @@
                     </div>
                 </div>
                 <div class="swiper-pagination"></div>
-                <div class="list">
-                    <div class="box">
-                        <strong class='strong'>我们约会吧</strong>
-                        <small class='small'>恋人家人好朋友</small>
-                        <img src='http://p0.meituan.net/mmc/fe4d2e89827aa829e12e2557ded363a112289.png'>
-                    </div>
-                    <div class="box">
-                        <strong class='strong' style="color: #ff3f0d;">低价超值</strong>
-                        <small class='small'>十元惠生活</small>
-                        <img src='http://p0.meituan.net/mmc/a06d0c5c0a972e784345b2d648b034ec9710.jpg'>
-                    </div>
-                    <div class="box">
-                        <strong class='strong' style="color: #f742a0;;">聚餐宴请</strong>
-                        <small class='small'>朋友家人常聚餐</small>
-                        <img src='http://p1.meituan.net/mmc/08615b8ae15d03c44cc5eb9bda381cb212714.png'>
-                    </div>
+            </div>
+
+            <div class="list">
+                <div class="box">
+                    <strong class='strong'>我们约会吧</strong>
+                    <small class='small'>恋人家人好朋友</small>
+                    <img src='http://p0.meituan.net/mmc/fe4d2e89827aa829e12e2557ded363a112289.png'>
+                </div>
+                <div class="box">
+                    <strong class='strong' style="color: #ff3f0d;">低价超值</strong>
+                    <small class='small'>十元惠生活</small>
+                    <img src='http://p0.meituan.net/mmc/a06d0c5c0a972e784345b2d648b034ec9710.jpg'>
+                </div>
+                <div class="box">
+                    <strong class='strong' style="color: #f742a0;;">聚餐宴请</strong>
+                    <small class='small'>朋友家人常聚餐</small>
+                    <img src='http://p1.meituan.net/mmc/08615b8ae15d03c44cc5eb9bda381cb212714.png'>
                 </div>
             </div>
+
         </div>
-        <script src="js/libs/require.js" data-main="./js/main"></script>
+    </div>
+    <script src="js/libs/require.js" data-main="./js/main"></script>
 </body>
 
 </html>
