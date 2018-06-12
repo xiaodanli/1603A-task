@@ -8,6 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="js/libs/swiper.min.css">
+    <link rel="stylesheet" href="fonts/iconfont.css">
     <script>
         document.documentElement.style.fontSize = window.innerWidth / 750 * 100 + 'px';
     </script>
@@ -15,12 +16,24 @@
 
 <body>
     <div class="wrap">
-        <header>头部</header>
+        <header class="navbar">
+            <div class="left">
+                北京<span><i class="icon iconfont icon-xiangxia"></i></span>
+            </div>
+            <div class="search">
+                <span><i class="icon iconfont icon-fangdajing"></i></span>
+                <input type="text" placeholder="输入商家/品类/商圈">
+            </div>
+            <div class="right">
+                <p><i class="icon iconfont icon-icongerenzhongxin-01"></i></p>我的
+            </div>
+        </header>
         <div class="main">
-            内容
+            <div class="lip">
+                <img src="http://ms0.meituan.net/touch/img/download_banner.png" class="img-box">
+            </div>
         </div>
     </div>
-    <script src="js/libs/require.js" data-main="./js/main"></script>
 </body>
 
 </html>
