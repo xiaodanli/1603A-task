@@ -8,6 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="js/libs/swiper.min.css">
+    <link rel="stylesheet" href="./fonts/iconfont.css">
     <script>
         document.documentElement.style.fontSize = window.innerWidth / 750 * 100 + 'px';
     </script>
@@ -15,8 +16,96 @@
 
 <body>
     <div class="wrap">
-        <header>头部</header>
+        <header class="navbar">
+            <div class="left">
+                北京<span><i class="icon iconfont icon-xiangxia"></i></span>
+            </div>
+            <div class="search">
+                <span><i class="icon iconfont icon-fangdajing"></i></span>
+                <input type="text" placeholder="输入商家/品类/商圈">
+            </div>
+            <div class="right">
+                <p><i class="icon iconfont icon-icongerenzhongxin-01"></i></p>我的
+            </div>
+        </header>
         <div class="main">
+            <div class="lip">
+                <img src="http://ms0.meituan.net/touch/img/download_banner.png" class="img-box">
+            </div>
+
+            <div class="nav">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <ul>
+                                <li>
+                                    <dl>
+                                        <dt><img src="./img/nav_01.gif" alt=""></dt>
+                                        <dd>美食</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt><img src="./img/nav_2_03.gif" alt=""></dt>
+                                        <dd>猫眼电影</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt><img src="./img/nav_03.gif" alt=""></dt>
+                                        <dd>酒店</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt><img src="./img/nav_04.gif" alt=""></dt>
+                                        <dd>休闲娱乐</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt><img src="./img/nav_05_03.gif" alt=""></dt>
+                                        <dd>外卖</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt><img src="./img/nav-6_10.gif" alt=""></dt>
+                                        <dd>KTV</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt><img src="./img/nav-7_13.gif" alt=""></dt>
+                                        <dd>周边游</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt><img src="./img/nav-8_14.gif" alt=""></dt>
+                                        <dd>丽人</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt><img src="./img/nav-9_16.gif" alt=""></dt>
+                                        <dd>小吃快餐</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt><img src="./img/nav_10.gif" alt=""></dt>
+                                        <dd>机票/火车票</dd>
+                                    </dl>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="swiper-slide">2</div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+
             <div class="list">
                 <div class="box">
                     <strong class='strong'>我们约会吧</strong>
@@ -96,6 +185,7 @@
 
                 </div>
             </div>
+
         </div>
         <script src="js/libs/require.js" data-main="./js/main"></script>
 </body>

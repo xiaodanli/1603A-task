@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/swiper-4.1.6.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <script>
+        document.documentElement.style.fontSize = window.innerWidth / 750 * 100 + 'px'
+    </script>
+</head>
+
+<body>
+    <div class="warp">
+        <header>
+            <p><span>北京</span> <input type="text" placeholder="输入商家/商品/品类"><span><img src="./imags/h_r1_c14.jpg" alt=""><br>我的</span></p>
+            <img src="./imags/h_r3_c1.jpg" alt="">
+        </header>
+        <main>
+            <div class="home-page swiper-container ">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide list">
+                        <div class="list-top"></div>
+                        <div class="list-center">
+                            <ul>
+                                <li>
+                                    <h6>我们约吧</h6>
+                                    <p>恋人家人好朋友</p>
+                                    <img src="./imags/h_r9_c2.jpg" alt="">
+                                </li>
+                                <li>
+                                    <h6>低价超值</h6>
+                                    <p>十元惠生活</p>
+                                    <img src="./imags/h_r9_c6.jpg" alt="">
+                                </li>
+                                <li>
+                                    <h6>聚餐宴请</h6>
+                                    <p>朋友家人常聚聚</p>
+                                    <img src="./imags/h_r9_c11.jpg" alt="">
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="list-last"></div>
+                    </div>
+                    <div class="swiper-slide">查看全部</div>
+                    <div class="swiper-slide">北京</div>
+                </div>
+            </div>
+        </main>
+        <footer>全部更多 ····》</footer>
+    </div>
+    <script src="./js/libs/require.js"></script>
+    <script>
+        require(['./js/main.js'], function() {
+            require(['index', 'listTop'])
+        })
+    </script>
+</body>
+
+</html>

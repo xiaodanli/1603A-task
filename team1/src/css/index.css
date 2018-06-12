@@ -149,6 +149,120 @@ section {
   overflow: auto;
 }
 
+section .nav .swiper-container {
+  width: 100%;
+  height: 5rem;
+}
+
+section .nav .swiper-container .swiper-pagination-bullet {
+  width: 40px;
+  height: 20px;
+  opacity: 1;
+  border-radius: 30%;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+section .nav .swiper-container .swiper-pagination-bullet-active {
+  color: #fff;
+  background: #007aff;
+}
+
+section .nav .swiper-slide {
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+section .nav .swiper-slide dl {
+  width: 20%;
+  height: auto;
+}
+
+section .nav .swiper-slide dl dt {
+  width: 100;
+  height: auto;
+}
+
+section .nav .swiper-slide dl dt i.iconfont {
+  width: 1.33333rem;
+  height: 1.33333rem;
+  font-size: 0.93333rem;
+  text-align: center;
+  line-height: 1.33333rem;
+  display: block;
+  border-radius: 50%;
+  background: #ddf;
+  color: #fff;
+  margin: 0 auto;
+}
+
+section .nav .swiper-slide dl dd {
+  text-align: center;
+  line-height: 0.53333rem;
+}
+
+section .nav .swiper-slide dl:nth-child(1) i.iconfont {
+  background: #fd9d21;
+  color: #fff;
+}
+
+section .nav .swiper-slide dl:nth-child(2) i.iconfont {
+  background: #ff6767;
+  color: #fff;
+}
+
+section .nav .swiper-slide dl:nth-child(3) i.iconfont {
+  background: #8a90fa;
+  color: #fff;
+}
+
+section .nav .swiper-slide dl:nth-child(4) i.iconfont {
+  background: #fed030;
+  color: #fff;
+}
+
+section .nav .swiper-slide dl:nth-child(5) i.iconfont {
+  background: #fd9d21;
+  color: #fff;
+}
+
+section .nav .swiper-slide dl:nth-child(6) i.iconfont {
+  background: #fed030;
+  color: #fff;
+}
+
+section .nav .swiper-slide dl:nth-child(7) i.iconfont {
+  background: #4dc6ee;
+  color: #fff;
+}
+
+section .nav .swiper-slide dl:nth-child(8) i.iconfont {
+  background: #ff80c2;
+  color: #fff;
+}
+
+section .nav .swiper-slide dl:nth-child(9) i.iconfont {
+  background: #fd9d21;
+  color: #fff;
+}
+
+section .nav .swiper-slide dl:nth-child(10) i.iconfont {
+  background: #599eec;
+  color: #fff;
+}
+
 section .list {
   width: 100%;
   display: flex;

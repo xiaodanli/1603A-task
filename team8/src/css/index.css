@@ -1,0 +1,123 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+
+.warp {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  font-size: 0.23rem; }
+  .warp header {
+    width: 100%;
+    height: 3.6rem;
+    background: papayawhip;
+    flex-shrink: 0; }
+  .warp main {
+    width: 100%;
+    flex: 1;
+    overflow: hidden;
+    background: #dddddd; }
+  .warp footer {
+    width: 100%;
+    height: 1rem;
+    background: darkgrey;
+    flex-shrink: 1;
+    text-align: center;
+    line-height: 1rem; }
+
+header > p {
+  width: 100%;
+  height: 0.8rem;
+  background: #06c1ae;
+  display: flex;
+  align-items: center;
+  justify-content: space-around; }
+  header > p input {
+    height: 0.6rem;
+    width: 70%; }
+
+header > img {
+  width: 100%;
+  height: 2.8rem;
+  display: block; }
+
+main > .home-page {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll; }
+  main > .home-page .swiper-wrapper {
+    width: 100%;
+    height: 100%; }
+    main > .home-page .swiper-wrapper .list-last {
+      width: 100%;
+      height: auto;
+      background: #fff; }
+    main > .home-page .swiper-wrapper .list-center {
+      width: 100%;
+      height: 2.1rem;
+      margin-bottom: 0.2rem;
+      background: #fff; }
+    main > .home-page .swiper-wrapper .list-top {
+      width: 100%;
+      height: 3rem;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      background: #fff;
+      margin-bottom: 0.01rem; }
+      main > .home-page .swiper-wrapper .list-top dl {
+        width: 20%;
+        height: 1.5rem;
+        text-align: center;
+        line-height: 1.5rem; }
+        main > .home-page .swiper-wrapper .list-top dl dd {
+          width: 100%;
+          height: 0.24rem;
+          text-align: center;
+          line-height: 0.24rem; }
+        main > .home-page .swiper-wrapper .list-top dl dt {
+          width: 100%;
+          height: 1.26rem;
+          text-align: center; }
+          main > .home-page .swiper-wrapper .list-top dl dt img {
+            max-width: 100%;
+            max-height: 100%; }
+
+.list-center > ul {
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .list-center > ul li > h6 {
+    color: palevioletred; }
+
+.list-last > dl {
+  width: 90%;
+  height: 1.2rem;
+  align-items: center;
+  margin: 0 auto;
+  display: flex; }
+  .list-last > dl dt {
+    width: 35%;
+    height: 0.75rem;
+    text-align: center;
+    line-height: 0.75rem; }
+    .list-last > dl dt img {
+      max-width: 100%;
+      max-height: 100%; }
+  .list-last > dl dd {
+    flex: 1;
+    display: flex;
+    flex-direction: column; }
