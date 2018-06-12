@@ -12,6 +12,7 @@ body,
     height: 100%;
 }
 
+<<<<<<< HEAD
 html {
     font-size: 625%;
 }
@@ -94,6 +95,55 @@ main {
                 border: .01rem solid #000;
                 margin: .2rem;
             }
+=======
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.header {
+    font-size: 0.32rem;
+    width: 100%;
+    background: #12c7a6;
+    .head {
+        display: flex;
+        height: 1.15rem;
+        line-height: 1.15rem;
+    }
+    .bot {
+        width: 100%;
+        img {
+            width: 100%;
+            display: block;
+        }
+    }
+    span {
+        display: inline-block;
+        text-align: center;
+        color: #fff;
+        font-size: 0.35rem;
+        &:nth-child(1) {
+            width: 15%;
+        }
+        &:nth-child(2) {
+            width: 70%;
+            input {
+                padding-left: 10%;
+                width: 90%;
+                height: 0.8rem;
+                border: none;
+                color: #0fc7a9;
+                background: #10a58f;
+                border-radius: 0.1rem;
+            }
+             ::-webkit-input-placeholder {
+                color: #0fc7a9;
+            }
+        }
+        &:nth-child(3) {
+            width: 15%;
+>>>>>>> 90ad8bd342e1a5e312334a9d9c70e3a12d0ff3a6
         }
     }
 }
