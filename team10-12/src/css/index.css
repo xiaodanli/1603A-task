@@ -1,90 +1,133 @@
 * {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
 }
 
 body,
 html {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  font-size: 0.32rem;
-  background: pink;
-  font-size: 0.32rem;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-size: 0.32rem;
 }
 
 .wrap {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .wrap .navbar {
-  width: 100%;
-  height: 1.01rem;
-  background: #06c1ae;
-  color: #fff;
-  display: flex;
-  justify-content: space-between;
-  border-bottom: 1px solid #21897d;
-  line-height: 1rem;
-  padding: 0 0.1rem;
+    width: 100%;
+    height: 1.01rem;
+    background: #06c1ae;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #21897d;
+    line-height: 1rem;
+    padding: 0 0.1rem;
 }
 
 .wrap .navbar .left span {
-  margin: 0 .1rem;
+    margin: 0 .1rem;
 }
 
 .wrap .navbar .left .iconfont {
-  font-size: .2rem;
+    font-size: .2rem;
 }
 
 .wrap .navbar .search {
-  width: 60%;
-  position: relative;
+    width: 60%;
+    position: relative;
 }
 
 .wrap .navbar .search input {
-  width: 100%;
-  height: .5rem;
-  font-size: .2rem;
-  padding-left: .3rem;
-  border: none;
-  border-radius: 0.1rem;
+    width: 100%;
+    height: .5rem;
+    font-size: .2rem;
+    padding-left: .3rem;
+    border: none;
+    border-radius: 0.1rem;
 }
 
 .wrap .navbar .search span {
-  position: absolute;
+    position: absolute;
 }
 
 .wrap .navbar .search span .iconfont {
-  color: #ccc;
-  font-size: .25rem;
+    color: #ccc;
+    font-size: .25rem;
 }
 
 .wrap .navbar .right {
-  width: 10%;
-  text-align: center;
-  line-height: 0.4rem;
-  font-size: .28rem;
+    width: 10%;
+    text-align: center;
+    line-height: 0.4rem;
+    font-size: .28rem;
 }
 
 .wrap .navbar .right p {
-  margin-top: .1rem;
+    margin-top: .1rem;
 }
 
 .wrap .main {
-  width: 100%;
-  flex: 1;
+    width: 100%;
+    flex: 1;
 }
 
 .wrap .main .lip {
-  width: 100%;
+    width: 100%;
 }
 
 .wrap .main .lip img {
-  width: 100%;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-size: 0.32rem;
+    background: pink;
+    vertical-align: middle;
+}
+
+.main .list {
+    width: 100%;
+    height: 2.5rem;
+    display: flex;
+    margin-top: 0.2rem;
+}
+
+.main .list .box {
+    width: 33%;
+    height: 2.5rem;
+    background: #fff;
+    position: relative;
+    margin: 0 0.3%;
+}
+
+.main .list .box .strong {
+    display: block;
+    color: #55a40f;
+    font-size: .3rem;
+    margin-top: .12rem;
+    margin-left: .36rem;
+}
+
+.main .list .box .small {
+    font-size: .3rem;
+    margin-top: .12rem;
+    margin-left: .25rem;
+    color: #666;
+}
+
+.main .list .box img {
+    width: 1.24rem;
+    height: 1.24rem;
+    margin: auto;
+    display: block;
+    position: absolute;
+    top: 1rem;
+    left: 0.7rem;
 }
