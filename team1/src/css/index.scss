@@ -2,7 +2,6 @@
 .wrap {
     width: 100%;
     height: 100%;
-    background: pink;
     display: flex;
     flex-direction: column;
 }
@@ -15,6 +14,59 @@ header {
 
 section {
     flex: 1;
-    background: skyblue;
-    overflow: auto;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.footlist {
+    width: 100%;
+    padding-left: pxTorem(10px);
+    h2 {
+        width: 100%;
+        line-height: pxTorem(45px);
+        font-size: pxTorem(16px);
+        border-bottom: solid #ccc pxTorem(1px);
+    }
+    dl {
+        display: flex;
+        padding: pxTorem(5px) 0;
+        border-bottom: solid #ccc pxTorem(1px);
+        dt {
+            width: pxTorem(90px);
+            text-align: center;
+            img {
+                width: 100%;
+            }
+        }
+        dd {
+            flex: 1;
+            padding-left: pxTorem(10px);
+            h6 {
+                line-height: pxTorem(25px);
+                font-size: pxTorem(14px);
+            }
+            >p {
+                line-height: pxTorem(25px);
+            }
+            .bottom {
+                display: flex;
+                justify-content: space-between;
+                margin-top: pxTorem(15px);
+                .right {
+                    padding-right: pxTorem(25px);
+                }
+                .left {
+                    display: flex;
+                    align-items: center;
+                    span {
+                        color: #44D0C2;
+                        padding-right: pxTorem(5px);
+                        b {
+                            font-size: pxTorem(18px);
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
