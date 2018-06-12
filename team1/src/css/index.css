@@ -145,8 +145,76 @@ header > div > i.iconfont {
 
 section {
   flex: 1;
-  background: skyblue;
+  background: #F0EFED;
   overflow: auto;
+}
+
+section .list {
+  width: 100%;
+  display: flex;
+  background: #fff;
+  padding: 20px;
+  text-align: center;
+  border-top: 1px solid #DDD8CE;
+  border-bottom: 1px solid #DDD8CE;
+  margin: 20px 0;
+}
+
+section .list dl {
+  flex: 1;
+  padding: 10px 19px;
+  padding: 0;
+  border-left: 1px solid #ddd8ce;
+  height: 310px;
+  text-align: center;
+}
+
+section .list dl dd {
+  vertical-align: top;
+  width: 255px;
+  text-align: left;
+  display: inline-block;
+}
+
+section .list dl dd p > strong {
+  font-size: 42px;
+}
+
+section .list dl dd p {
+  margin-top: 12px;
+  margin-bottom: 36px;
+}
+
+section .list dl dd b {
+  color: #666;
+}
+
+section .list dl:nth-child(1) {
+  border-left: none;
+}
+
+section .list dl:nth-child(1) p > strong {
+  color: #55a40f;
+}
+
+section .list dl:nth-child(2) p > strong {
+  color: #ff3f0d;
+}
+
+section .list dl:nth-child(3) p > strong {
+  color: #f742a0;
+}
+
+section .list dt {
+  text-align: center;
+  margin-top: 5px;
+}
+
+section .list dt img {
+  width: 140px;
+  height: 140px;
+  margin: auto;
+  display: block;
 }
 
 .banner {
@@ -159,67 +227,68 @@ section {
   overflow-y: auto;
 }
 
-.banner .footlist {
+.footlist {
   width: 100%;
   padding-left: 0.26667rem;
+  background: #fff;
 }
 
-.banner .footlist h2 {
+.footlist h2 {
   width: 100%;
   line-height: 1.2rem;
   font-size: 0.42667rem;
   border-bottom: solid #ccc 0.02667rem;
 }
 
-.banner .footlist dl {
+.footlist dl {
   display: flex;
   padding: 0.13333rem 0;
   border-bottom: solid #ccc 0.02667rem;
 }
 
-.banner .footlist dl dt {
+.footlist dl dt {
   width: 2.4rem;
   text-align: center;
 }
 
-.banner .footlist dl dt img {
+.footlist dl dt img {
   width: 100%;
 }
 
-.banner .footlist dl dd {
+.footlist dl dd {
   flex: 1;
   padding-left: 0.26667rem;
 }
 
-.banner .footlist dl dd h6 {
+.footlist dl dd h6 {
   line-height: 0.66667rem;
   font-size: 0.37333rem;
 }
 
-.banner .footlist dl dd > p {
+.footlist dl dd > p {
   line-height: 0.66667rem;
 }
 
-.banner .footlist dl dd .bottom {
+.footlist dl dd .bottom {
   display: flex;
   justify-content: space-between;
   margin-top: 0.4rem;
 }
 
-.banner .footlist dl dd .bottom .right {
+.footlist dl dd .bottom .right {
   padding-right: 0.66667rem;
 }
 
-.banner .footlist dl dd .bottom .left {
+.footlist dl dd .bottom .left {
   display: flex;
   align-items: center;
 }
 
-.banner .footlist dl dd .bottom .left span {
+.footlist dl dd .bottom .left span {
   color: #44D0C2;
   padding-right: 0.13333rem;
 }
 
-.banner .footlist dl dd .bottom .left span b {
+.footlist dl dd .bottom .left span b {
   font-size: 0.48rem;
 }
