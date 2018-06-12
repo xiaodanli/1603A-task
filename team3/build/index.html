@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" >
+    <meta name="viewport" content="initial-scale=1, maximum-scale=3, minimum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telphone=no, email=no" >
+    <title></title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="icon/iconfont.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+</head>
+<body>
+	<div class="wrap">
+		<header>
+			<a href="javascript:;">
+				北京
+				<i class="iconfont icon-angle-down"></i>
+			</a>
+			<form>
+				<i class="iconfont icon-fangdajing"></i>
+				<input type="text" placeholder="输入商家/品类/商圈">
+			</form>
+			<a href="javascript:;" class="login">
+				<i class="iconfont icon-wode"></i>
+				<span>我的</span>
+			</a>
+		</header>
+		<div class="content">
+			<div class="ban"><img src="img/banan.png" alt=""></div>
+			<div class="swiper-container main">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide"></div>
+					<div class="swiper-slide"></div>
+				</div>
+				<div class="swiper-pagination page"></div>
+			</div>
+			<div class="prod"></div>
+			<div class="list">
+				<h2>猜你喜欢</h2>
+				<ul></ul>
+			</div>
+		</div>
+	</div>
+	<script src="js/require.js"></script>
+	<script>
+		require(["js/main.js"], function() {
+			require(["index"])
+		})
+	</script>
+</body>
+</html>
