@@ -3,13 +3,13 @@ var server = require('gulp-webserver');
 var path = require('path');
 var url = require('url');
 var fs = require('fs');
-var data = require('./src/data/data.json');
+var data = require('./data/data.json');
 
 gulp.task('server', function() {
     gulp.src('src')
         .pipe(server({
-            port: 8888,
-            host: '169.254.210.46',
+            port: 8080,
+            // host: '169.254.210.46',
             open: true,
             lieveload: true,
             middleware: function(req, res, next) {

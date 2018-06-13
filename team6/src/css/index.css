@@ -10,17 +10,11 @@ body,
 .wrap {
   width: 100%;
   height: 100%;
+  background: #eee;
 }
 
-<<<<<<< HEAD
 html {
   font-size: 625%;
-}
-
-main .nav ul li, main .nav .button {
-  justify-content: center;
-  align-items: center;
-  display: flex;
 }
 
 a {
@@ -44,66 +38,40 @@ ol {
 
 .wrap {
   display: flex;
+  flex-direction: column;
 }
 
 main {
   flex: 1;
   width: 100%;
-  overflow-y: scroll;
 }
 
 main .nav {
-  display: flex;
   width: 100%;
-  flex-direction: column;
+  background: white;
 }
 
-main .nav ul {
-  display: flex;
+main .nav .swiper-container,
+main .nav .swiper-wrapper,
+main .nav .swiper-slide {
   width: 100%;
+}
+
+main .nav .swiper-slide {
+  display: flex;
   flex-wrap: wrap;
 }
 
-main .nav ul li {
-  display: flex;
+main .nav .swiper-slide li {
   width: 20%;
-  flex-direction: column;
-  margin-top: .2rem;
-}
-
-main .nav ul li img {
-  width: 80%;
-  height: 80%;
-}
-
-main .nav ul li p {
-  padding-top: .1rem;
-  color: #000;
-  font-size: .25rem;
-}
-
-main .nav .button {
-  display: flex;
-  width: 100%;
-}
-
-main .nav .button span {
-  display: flex;
-  width: .3rem;
-  height: .3rem;
-  border-radius: 50%;
-  border: .01rem solid #000;
-  margin: .2rem;
-=======
-* {
-  padding: 0;
-  margin: 0;
-  list-style: none;
+  text-align: center;
+  padding: .22rem 0;
 }
 
 .header {
   font-size: 0.32rem;
   width: 100%;
+  height: 3.2rem;
   background: #12c7a6;
 }
 
@@ -153,5 +121,113 @@ main .nav .button span {
 
 .header span:nth-child(3) {
   width: 15%;
->>>>>>> 90ad8bd342e1a5e312334a9d9c70e3a12d0ff3a6
+}
+
+.content {
+  width: 100%;
+  display: flex;
+  padding-right: .2rem;
+  box-sizing: border-box;
+  background: white;
+}
+
+.content dl {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-right: 0.01rem solid #ccc;
+  padding: .2rem 0;
+}
+
+.content dl dt h1 {
+  font-size: .16rem;
+}
+
+.content dl dt h2 {
+  color: #404040;
+  padding: .2rem 0;
+}
+
+.content dl dd {
+  width: 100%;
+}
+
+.content dl dd img {
+  margin-left: 20%;
+  width: 60%;
+  padding-top: .1rem;
+}
+
+.content dl:nth-child(1) dt h1 {
+  color: #9fda96;
+}
+
+.content dl:nth-child(2) dt h1 {
+  color: #f22b24;
+}
+
+.content dl:nth-child(3) {
+  border-right: none;
+}
+
+.content dl:nth-child(3) dt h1 {
+  color: #d04c86;
+}
+
+main .like dl {
+  display: flex;
+  margin-top: 2%;
+}
+
+main .like dl dt {
+  width: 2.5rem;
+  height: 2rem;
+  padding: 1%;
+}
+
+main .like dl dt img {
+  width: 100%;
+  height: 100%;
+}
+
+main .like dl dd {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1% 1%;
+}
+
+main .like dl dd p:nth-child(1) {
+  font-size: 0.4rem;
+}
+
+main .like dl dd p:nth-child(2) {
+  font-size: 0.25rem;
+  color: #999999;
+}
+
+main .like dl dd .under {
+  display: flex;
+  justify-content: space-between !important;
+  font-size: 0.25rem;
+  line-height: 0.22rem;
+  color: #999999;
+}
+
+main .like dl dd .under span:nth-child(1) i:nth-child(1) {
+  font-size: 0.3rem;
+  color: #53DACB;
+  font-weight: bold;
+}
+
+main .like dl dd .under span:nth-child(1) i:nth-child(2) {
+  color: #53DACB;
+}
+
+main .like dl dd .under i {
+  font-style: normal !important;
+  color: none;
 }
