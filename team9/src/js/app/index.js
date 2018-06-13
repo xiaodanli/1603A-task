@@ -3,18 +3,19 @@ require(['jquery', 'swiper'], function($, Swiper) {
         url: '/data',
         dataType: 'json',
         success: function(data) {
-            var str = ''
-            data.map(function(file) {
-                str += `<dl>
-                <dt><img src="images/${file.img}" alt=""></dt>
-                <dd>
-                    <h2>${file.title}</h2>
-                    <p>${file.text}</p>
-                </dd>
-            </dl>`
+            var json = '';
+            data.swiperList.forEach(function(file, index) {
+                json += `<li class="swiper-slide dl">`;
+                file.slide.forEach(function(files, index) {
+                    json += `<dl>
+                    <dt><i class="icon iconfont ${files.class}"></i></dt>
+                    <dd>${files.name}</dd>
+                </dl>`
+                    console.log(files)
+                })
+                json += `</li>`;
             })
-            $('.cream').html(str)
-
+            $('.swiper-wrapper').append(json);
         }
     })
     new Swiper('.swiper-container', {

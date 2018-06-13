@@ -1,17 +1,67 @@
-[{
-    "img": "b1.png",
-    "title": "比格披萨",
-    "text": "[北京等,周五至周一]"
-}, {
-    "img": "b1.png",
-    "title": "比格披萨",
-    "text": "[北京等,周五至周一]"
-}, {
-    "img": "b1.png",
-    "title": "比格披萨",
-    "text": "[北京等,周五至周一]"
-}, {
-    "img": "b1.png",
-    "title": "比格披萨",
-    "text": "[北京等,周五至周一]"
-}]
+{
+    "swiperList": [{
+        "slide": [{
+            "name": "美食",
+            "class": "icon-zanting"
+        }, {
+            "name": "猫眼电影",
+            "class": "icon-zanting"
+        }, {
+            "name": "酒店",
+            "class": "icon-zanting"
+        }, {
+            "name": "休闲娱乐",
+            "class": "icon-zanting"
+        }, {
+            "name": "外卖",
+            "class": "icon-zanting"
+        }, {
+            "name": "KTV",
+            "class": "icon-zanting"
+        }, {
+            "name": "周边游",
+            "class": "icon-zanting"
+        }, {
+            "name": "丽人",
+            "class": "icon-zanting"
+        }, {
+            "name": "小吃快餐",
+            "class": "icon-zanting"
+        }, {
+            "name": "机票",
+            "class": "icon-zanting"
+        }]
+    }, {
+        "slide": [{
+            "name": "美食",
+            "class": "icon-zanting"
+        }, {
+            "name": "猫眼电影",
+            "class": "icon-zanting"
+        }, {
+            "name": "酒店",
+            "class": "icon-zanting"
+        }, {
+            "name": "休闲娱乐",
+            "class": "icon-zanting"
+        }, {
+            "name": "外卖",
+            "class": "icon-zanting"
+        }, {
+            "name": "KTV",
+            "class": "icon-zanting"
+        }, {
+            "name": "周边游",
+            "class": "icon-zanting"
+        }, {
+            "name": "丽人",
+            "class": "icon-zanting"
+        }, {
+            "name": "小吃快餐",
+            "class": "icon-zanting"
+        }, {
+            "name": "机票",
+            "class": "icon-zanting"
+        }]
+    }]
+}
