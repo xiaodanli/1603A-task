@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        document.documentElement.style.fontSize = window.innerWidth / 750 * 100 + 'px'
+    </script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <header class='header'>
+            头部
+        </header>
+        <nav class='nav'>
+            <h2>2018通讯录</h2>
+            <ul class='list'>
+                <script id='movie' type='text/x-handlebars-template'>
+                    <li>
+                        {{#each list}}
+                        <span>{{this}}</span> {{/each}}
+                    </li>
+                    {{#each item}} {{#judge @index}}
+                    <li><span>{{addIndex @index}}</span><span>{{name}}</span><span>{{sex}}</span><span>{{age}}</span><span>{{site}}</span></li>
+                    {{/judge}}{{/each}}
+                </script>
+            </ul>
+        </nav>
+        <footer class='footer'>
+            底部
+        </footer>
+    </div>
+    <script src="js/libs/require.js" defer async='true' data-main='js/config'></script>
+</body>
+
+</html>
