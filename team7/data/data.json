@@ -1,52 +1,67 @@
 [{
-    "item_1": [{
-        "url": "icon iconfont icon-tianmao2",
-        "characters": "美食"
+    "swiper_item": [{
+        "list": [{
+            "url": "icon iconfont icon-tianmao2",
+            "characters": "美食"
+        }, {
+            "url": "icon iconfont icon-tianmao2",
+            "characters": "猫眼电影"
+        }, {
+            "url": "icon iconfont icon-tianmao2",
+            "characters": "酒店"
+        }, {
+            "url": "icon iconfont icon-tianmao2",
+            "characters": "休闲娱乐"
+        }, {
+            "url": "icon iconfont icon-tianmao2",
+            "characters": "外卖"
+        }, {
+            "url": "icon iconfont icon-tianmao2",
+            "characters": "KTV"
+        }, {
+            "url": "icon iconfont icon-tianmao2",
+            "characters": "周边游"
+        }, {
+            "url": "icon iconfont icon-tianmao2",
+            "characters": "丽人"
+        }, {
+            "url": "icon iconfont icon-tianmao2",
+            "characters": "小吃快餐"
+        }, {
+            "url": "icon iconfont icon-tianmao2",
+            "characters": "机票/火车票"
+        }]
     }, {
-        "url": "icon iconfont icon-tianmao2",
-        "characters": "猫眼电影"
-    }, {
-        "url": "icon iconfont icon-tianmao2",
-        "characters": "酒店"
-    }, {
-        "url": "icon iconfont icon-tianmao2",
-        "characters": "休闲娱乐"
-    }, {
-        "url": "icon iconfont icon-tianmao2",
-        "characters": "外卖"
-    }, {
-        "url": "icon iconfont icon-tianmao2",
-        "characters": "KTV"
-    }, {
-        "url": "icon iconfont icon-tianmao2",
-        "characters": "周边游"
-    }, {
-        "url": "icon iconfont icon-tianmao2",
-        "characters": "丽人"
-    }, {
-        "url": "icon iconfont icon-tianmao2",
-        "characters": "小吃快餐"
-    }, {
-        "url": "icon iconfont icon-tianmao2",
-        "characters": "机票/火车票"
-    }],
-    "item_2": [{
-        "url": "icon iconfont icon-tianmao2",
-        "characters": "美食"
-    }, {
-        "url": "icon iconfont icon-tianmao2",
-        "characters": "猫眼电影"
-    }, {
-        "url": "icon iconfont icon-tianmao2",
-        "characters": "酒店"
-    }, {
-        "url": "icon iconfont icon-tianmao2",
-        "characters": "休闲娱乐"
-    }, {
-        "url": "icon iconfont icon-tianmao2",
-        "characters": "外卖"
-    }, {
-        "url": "icon iconfont icon-tianmao2",
-        "characters": "KTV"
+        "list": [{
+            "url": "icon iconfont icon-tianmao2",
+            "characters": "游戏"
+        }, {
+            "url": "icon iconfont icon-tianmao2",
+            "characters": "猫眼电影"
+        }, {
+            "url": "icon iconfont icon-tianmao2",
+            "characters": "酒店"
+        }, {
+            "url": "icon iconfont icon-tianmao2",
+            "characters": "休闲娱乐"
+        }, {
+            "url": "icon iconfont icon-tianmao2",
+            "characters": "外卖"
+        }, {
+            "url": "icon iconfont icon-tianmao2",
+            "characters": "KTV"
+        }, {
+            "url": "icon iconfont icon-tianmao2",
+            "characters": "周边游"
+        }, {
+            "url": "icon iconfont icon-tianmao2",
+            "characters": "丽人"
+        }, {
+            "url": "icon iconfont icon-tianmao2",
+            "characters": "小吃快餐"
+        }, {
+            "url": "icon iconfont icon-tianmao2",
+            "characters": "机票/火车票"
+        }]
     }]
 }]

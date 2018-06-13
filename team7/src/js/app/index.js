@@ -3,30 +3,24 @@ require(['jquery', 'swiper'], function($, swiper) {
         url: '/carous',
         dataType: 'json',
         success: function(data) {
-            $.each(data, function(index, value) {
-                var html = ''
-                $.each(value.item_1, function(inx, val) {
-                    html += `
-                        <dl>
-                            <dt><i class="${val.url}"></i></dt>
-                            <dd>${val.characters}</dd>
-                        </dl>
-                    `
+            for (var i in data) {
+                $.each(data[i], function(index, value) {
+                    var html = ''
+                    $.each(value, function(inx, val) {
+                        html += "<li class='li swiper-slide'>"
+                        $.each(val.list, function(i, v) {
+                            html += `
+                                    <dl>
+                                        <dt><i class="${v.url}"></i></dt>
+                                        <dd>${v.characters}</dd>
+                                    </dl>
+                                    `
+                        })
+                        html += '</li>'
+                    })
+                    $('.list').html(html)
                 })
-                $('.list li:eq(0)').html(html)
-            })
-            $.each(data, function(index, value) {
-                var html = ''
-                $.each(value.item_2, function(inx, val) {
-                    html += `
-                        <dl>
-                            <dt><i class="${val.url}"></i></dt>
-                            <dd>${val.characters}</dd>
-                        </dl>
-                    `
-                })
-                $('.list li:eq(1)').html(html)
-            })
+            }
             new swiper('.banner', {
                 pagination: {
                     el: '.ol',
