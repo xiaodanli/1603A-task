@@ -68,28 +68,42 @@ main > .home-page {
       background: #fff; }
     main > .home-page .swiper-wrapper .list-top {
       width: 100%;
-      height: 3rem;
+      height: 4rem;
+      background: #fff;
+      margin-bottom: 0.01rem; }
+
+.list-top > .top-cont {
+  width: 100%;
+  height: 100%;
+  position: relative; }
+  .list-top > .top-cont .swiper-pagination {
+    width: 100%;
+    height: 0.4rem; }
+  .list-top > .top-cont .top-wrap {
+    width: 100%;
+    height: 3.6rem; }
+    .list-top > .top-cont .top-wrap .swiper-slide {
+      width: 100%;
+      height: 100%;
       display: flex;
       justify-content: space-around;
       align-items: center;
-      flex-wrap: wrap;
-      background: #fff;
-      margin-bottom: 0.01rem; }
-      main > .home-page .swiper-wrapper .list-top dl {
+      flex-wrap: wrap; }
+      .list-top > .top-cont .top-wrap .swiper-slide dl {
         width: 20%;
         height: 1.5rem;
         text-align: center;
         line-height: 1.5rem; }
-        main > .home-page .swiper-wrapper .list-top dl dd {
+        .list-top > .top-cont .top-wrap .swiper-slide dl dd {
           width: 100%;
           height: 0.24rem;
           text-align: center;
           line-height: 0.24rem; }
-        main > .home-page .swiper-wrapper .list-top dl dt {
+        .list-top > .top-cont .top-wrap .swiper-slide dl dt {
           width: 100%;
           height: 1.26rem;
           text-align: center; }
-          main > .home-page .swiper-wrapper .list-top dl dt img {
+          .list-top > .top-cont .top-wrap .swiper-slide dl dt img {
             max-width: 100%;
             max-height: 100%; }
 
