@@ -1,41 +1,89 @@
-[{
-        "name": "iconfont icon-bofang3 i1",
-        "val": "美食"
-    },
-    {
-        "name": "iconfont icon-zhihu i2",
-        "val": "猫眼电影"
-    },
-    {
-        "name": "iconfont icon-06 i3",
-        "val": "酒店"
-    },
-    {
-        "name": "iconfont icon-fenxiang4 i4",
-        "val": "休闲娱乐"
-    },
-    {
-        "name": "iconfont icon-26 i5",
-        "val": "外卖"
-    },
-    {
-        "name": "iconfont icon-27 i6",
-        "val": "KTV"
-    },
-    {
-        "name": "iconfont icon-31 i7",
-        "val": "周边游"
-    },
-    {
-        "name": "iconfont icon-tianmao3 i8",
-        "val": "丽人"
-    },
-    {
-        "name": "iconfont icon-address i9",
-        "val": "小吃快餐"
-    },
-    {
-        "name": "iconfont icon-shouye i11",
-        "val": "机票/火车票"
-    }
-]
+{
+    "swiperdata": [{
+            "list": [{
+                    "name": "iconfont icon-bofang3 i1",
+                    "val": "美食"
+                },
+                {
+                    "name": "iconfont icon-zhihu i2",
+                    "val": "猫眼电影"
+                },
+                {
+                    "name": "iconfont icon-06 i3",
+                    "val": "酒店"
+                },
+                {
+                    "name": "iconfont icon-fenxiang4 i4",
+                    "val": "休闲娱乐"
+                },
+                {
+                    "name": "iconfont icon-26 i5",
+                    "val": "外卖"
+                },
+                {
+                    "name": "iconfont icon-27 i6",
+                    "val": "KTV"
+                },
+                {
+                    "name": "iconfont icon-31 i7",
+                    "val": "周边游"
+                },
+                {
+                    "name": "iconfont icon-tianmao3 i8",
+                    "val": "丽人"
+                },
+                {
+                    "name": "iconfont icon-address i9",
+                    "val": "小吃快餐"
+                },
+                {
+                    "name": "iconfont icon-shouye i11",
+                    "val": "机票/火车票"
+                }
+            ]
+        },
+        {
+            "list": [{
+                    "name": "iconfont icon-bofang3 i1",
+                    "val": "美食"
+                },
+                {
+                    "name": "iconfont icon-zhihu i2",
+                    "val": "猫眼电影"
+                },
+                {
+                    "name": "iconfont icon-06 i3",
+                    "val": "酒店"
+                },
+                {
+                    "name": "iconfont icon-fenxiang4 i4",
+                    "val": "休闲娱乐"
+                },
+                {
+                    "name": "iconfont icon-26 i5",
+                    "val": "外卖"
+                },
+                {
+                    "name": "iconfont icon-27 i6",
+                    "val": "KTV"
+                },
+                {
+                    "name": "iconfont icon-31 i7",
+                    "val": "周边游"
+                },
+                {
+                    "name": "iconfont icon-tianmao3 i8",
+                    "val": "丽人"
+                },
+                {
+                    "name": "iconfont icon-address i9",
+                    "val": "小吃快餐"
+                },
+                {
+                    "name": "iconfont icon-shouye i11",
+                    "val": "机票/火车票"
+                }
+            ]
+        }
+    ]
+}

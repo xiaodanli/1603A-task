@@ -17,8 +17,17 @@ require(['jquery', 'swiper'], function($, swiper) {
     })
 
     function render(res) {
-        res.forEach(function(item, i) {
-            $(`<li><i class="${item.name}"></i>${item.val}</li>`).appendTo($('.ull'));
+        var rs = res.swiperdata;
+        rs.forEach(function(v, i) {
+            var str = '';
+            v.list.forEach(function(file, a) {
+                str += `<li>
+                <i class="${file.name}"></i>
+                ${file.val}
+                </li>`
+            })
+            $('.ull').eq(i).html(str)
         })
+
     }
 })
