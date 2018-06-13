@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>头部</header>
+        <section>
+            <h4>2018通讯录</h4>
+            <ul class='list'>
+            </ul>
+            <section>
+                <footer>底部</footer>
+    </div>
+    <script src="./js/libs/handlebars-v4.0.11.js"></script>
+    <script src="./js/libs/require.js" data-main="./js/main"></script>
+    <script id="tpl" type="text/x-handlebars-template">
+        {{#each list}} {{#limit @index}}
+        <li>
+            <span>{{addIndex @index}}</span>
+            <span>{{name}}</span>
+            <span>{{autoer}}</span> {{#each list}} {{superman}} {{/each}}
+            <li>
+                {{/limit}} {{/each}}
+    </script>
+    <script>
+    </script>
+</body>
+
+</html>
