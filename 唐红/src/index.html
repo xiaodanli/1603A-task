@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="keywords" content="礼来中国,礼品销售">
+	<meta name=description content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" >
+	<meta name="viewport" content="initial-scale=1, maximum-scale=3, minimum-scale=1, user-scalable=no">
+	<meta name="format-detection" content="telphone=no, email=no" >
+	<title></title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="wrap">	
+		<header>联系人</header>
+		<div class="content">
+			<div class="prod">
+				<h2>2020</h2>
+				<ul>
+					<li>
+						<span>序号</span>
+						<span>姓名</span>
+						<span>性别</span>
+						<span>年龄</span>
+						<span>身高</span>
+					</li>
+				</ul>
+			</div>
+			<script id="tpl" tyep="text/x-handlebars-template">  
+				{{#each this}} {{#limit @index}}
+					<li>
+						<span>{{addIndex @index}}</span>
+						<span>{{name}}</span>
+						<span>{{sex}}</span>
+						<span>{{age}}</span>
+						<span>{{height}}</span>
+					</li>
+					{{/limit}}
+				{{/each}}
+
+			</script>
+		</div>
+		<footer>底部</footer>
+	</div>
+	<script src="js/require.js"></script>
+	<script>
+		require(["js/main.js"],function() {
+			require(["index"])
+		})
+	</script>
+</body>
+</html>
