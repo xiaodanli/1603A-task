@@ -3,32 +3,41 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="./css/swiper.min.css">
-    <script>
-        document.documentElement.style.fontSize = window.innerWidth / 750 * 100 + 'px';
-    </script>
 </head>
 
 <body>
     <div class="wrap">
         <header>头部</header>
         <main>
-            <div class="swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">1</div>
-                    <div class="swiper-slide">2</div>
-                    <div class="swiper-slide">3</div>
-                </div>
-            </div>
+            <h2>2018年信息表</h2>
+            <ul class="list">
+
+            </ul>
         </main>
+        <footer>底部</footer>
     </div>
-    <script src='./js/lib/require.js'></script>
+    <script src='./js/libs/require.js'></script>
+    <script id='tpl' type='text/x-handlebars-template'>
+        <li>
+            {{#each tit}}
+            <span>{{this}}</span>{{/each}}
+        </li>
+        {{#each list}} {{#limit @index}}
+        <li>
+            <span>{{addIndex @index}}</span>
+            <span>{{name}}</span>
+            <span>{{sex}}</span>
+            <span>{{age}}</span>
+            <span>{{height}}</span>
+        </li>
+        {{/limit}} {{/each}}
+    </script>
     <script>
-        require(['./js/main.js'], function() {
+        require(['js/main.js'], function() {
             require(['index'])
         })
     </script>
