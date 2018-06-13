@@ -15,7 +15,7 @@ var data = require('./src/data/data.json');
 gulp.task('server', function() {
     gulp.src('src')
         .pipe(server({
-            port: 8881,
+            port: 8811,
             livereload: true, //自动刷新
             middleware: function(req, res, next) {
                 var pathname = url.parse(req.url).pathname;
