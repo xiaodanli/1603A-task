@@ -1,0 +1,62 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+    list-style: none;
+}
+
+.wrap {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    width: 100%;
+    background: pink;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+}
+
+.content {
+    width: 100%;
+    flex: 1;
+}
+
+.content h2 {
+    width: 100%;
+    font-size: 18px;
+    text-align: center;
+    color: green;
+    height: 40px;
+    line-height: 40px;
+}
+
+.content ul li {
+    width: 100%;
+    display: flex;
+    height: 30px;
+    text-align: center;
+}
+
+.content ul li span {
+    flex: 1;
+}
+
+.footer {
+    width: 100%;
+    background: pink;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+}
