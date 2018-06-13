@@ -4,8 +4,8 @@ var sass = require('gulp-sass');
 var sequence = require('gulp-sequence');
 
 
-var listJson = require('./src/data/list.json');
-var topJson = require('./src/data/list-top.json')
+var listJson = require('./data/list.json');
+var topJson = require('./data/list-top.json')
 var url = require('url');
 var path = require('path');
 var fs = require('fs');
