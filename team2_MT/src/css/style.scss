@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+html,
+body,
+.wrap {
+    width: 100%;
+    height: 100%;
+    font-size: 0.35rem;
+}
+
+.wrap {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+header {
+    width: 100%;
+    height: 1rem;
+    background: #06c1ae;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    a {
+        text-decoration: none;
+        color: #fff;
+    }
+    form {
+        width: 60%;
+        line-height: .6rem;
+        background: #21897d;
+        height: 75%;
+        i {
+            color: #fff;
+        }
+        input {
+            width: 85%;
+            height: 90%;
+            border: 0;
+            background: #21897d;
+            // background: #21897d;
+        }
+    }
+    dl {
+        text-align: center;
+        color: #fff;
+        dt {
+            i {
+                font-size: .4rem;
+            }
+        }
+    }
+}
+
+section {
+    border-top: 1px solid #ccc;
+    width: 100%;
+    height: auto;
+    flex: 1;
+    overflow-y: scroll;
+    .top {
+        position: relative;
+        width: 100%;
+        height: 2.22rem;
+        background: #ccc;
+        img {
+            width: 100%;
+        }
+        .left {
+            position: absolute;
+            bottom: .2rem;
+            left: 15%;
+            width: 2.5rem;
+            height: .7rem;
+            border: .03rem solid #06c1ae;
+            line-height: .7rem;
+            text-align: center;
+            border-radius: .5rem;
+            font-size: .3rem;
+            color: #06c1ae;
+        }
+        .right {
+            position: absolute;
+            bottom: .2rem;
+            right: 15%;
+            width: 2.5rem;
+            height: .7rem;
+            background: #06c1ae;
+            line-height: .7rem;
+            text-align: center;
+            border-radius: .5rem;
+            font-size: .3rem;
+            color: #fff;
+        }
+    }
+    .banner {
+        width: 100%;
+        height: 3rem;
+        .box {
+            width: 100%;
+            height: 1.5rem;
+            display: flex;
+            dl {
+                flex: 1;
+                text-align: center;
+                dd {
+                    font-size: 0.3rem;
+                }
+                img {
+                    width: 0.8rem;
+                    height: 0.8rem;
+                }
+            }
+        }
+    }
+    .footer {
+        width: 100%;
+        p {
+            box-sizing: border-box;
+            width: 100%;
+            height: 40px;
+            line-height: 40px;
+            padding-left: 20px;
+            font-size: 16px;
+            color: #ccc;
+            border-bottom: 1px solid #ccc;
+        }
+        .button {
+            width: 100%;
+            #test {
+                position: relative;
+                width: 95%;
+                margin: 10px auto;
+                display: flex;
+                dt {
+                    flex: 2;
+                    height: 80px;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                dd {
+                    flex: 6;
+                    p {
+                        border-bottom: 0;
+                        height: 30px;
+                    }
+                    span {
+                        font-size: 12px;
+                        color: #333;
+                        padding-left: 18px;
+                    }
+                    .price {
+                        font-size: 12px;
+                        color: #b3bfb4;
+                        span {
+                            color: #16c5b3;
+                            padding-left: 0px;
+                            padding-right: 10px;
+                        }
+                    }
+                    .num {
+                        position: absolute;
+                        right: 0;
+                        top: 63px;
+                    }
+                }
+            }
+        }
+    }
+    .box1 {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        background: #fff;
+        dl {
+            width: 33.3%;
+            border-left: 1px solid #ccc;
+            padding-left: 5px;
+            text-align: center;
+            dd h4 {
+                margin-bottom: 10px;
+                font-size: 20px;
+            }
+            h6 {
+                margin-bottom: 10px;
+                font-size: 14px;
+            }
+        }
+    }
+}

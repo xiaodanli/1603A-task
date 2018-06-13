@@ -1,0 +1,224 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+html,
+body,
+.wrap {
+  width: 100%;
+  height: 100%;
+  font-size: 0.35rem;
+}
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+header {
+  width: 100%;
+  height: 1rem;
+  background: #06c1ae;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header a {
+  text-decoration: none;
+  color: #fff;
+}
+
+header form {
+  width: 60%;
+  line-height: .6rem;
+  background: #21897d;
+  height: 75%;
+}
+
+header form i {
+  color: #fff;
+}
+
+header form input {
+  width: 85%;
+  height: 90%;
+  border: 0;
+  background: #21897d;
+}
+
+header dl {
+  text-align: center;
+  color: #fff;
+}
+
+header dl dt i {
+  font-size: .4rem;
+}
+
+section {
+  border-top: 1px solid #ccc;
+  width: 100%;
+  height: auto;
+  flex: 1;
+  overflow-y: scroll;
+}
+
+section .top {
+  position: relative;
+  width: 100%;
+  height: 2.22rem;
+  background: #ccc;
+}
+
+section .top img {
+  width: 100%;
+}
+
+section .top .left {
+  position: absolute;
+  bottom: .2rem;
+  left: 15%;
+  width: 2.5rem;
+  height: .7rem;
+  border: .03rem solid #06c1ae;
+  line-height: .7rem;
+  text-align: center;
+  border-radius: .5rem;
+  font-size: .3rem;
+  color: #06c1ae;
+}
+
+section .top .right {
+  position: absolute;
+  bottom: .2rem;
+  right: 15%;
+  width: 2.5rem;
+  height: .7rem;
+  background: #06c1ae;
+  line-height: .7rem;
+  text-align: center;
+  border-radius: .5rem;
+  font-size: .3rem;
+  color: #fff;
+}
+
+section .banner {
+  width: 100%;
+  height: 3rem;
+}
+
+section .banner .box {
+  width: 100%;
+  height: 1.5rem;
+  display: flex;
+}
+
+section .banner .box dl {
+  flex: 1;
+  text-align: center;
+}
+
+section .banner .box dl dd {
+  font-size: 0.3rem;
+}
+
+section .banner .box dl img {
+  width: 0.8rem;
+  height: 0.8rem;
+}
+
+section .footer {
+  width: 100%;
+}
+
+section .footer p {
+  box-sizing: border-box;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  padding-left: 20px;
+  font-size: 16px;
+  color: #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+section .footer .button {
+  width: 100%;
+}
+
+section .footer .button #test {
+  position: relative;
+  width: 95%;
+  margin: 10px auto;
+  display: flex;
+}
+
+section .footer .button #test dt {
+  flex: 2;
+  height: 80px;
+}
+
+section .footer .button #test dt img {
+  width: 100%;
+  height: 100%;
+}
+
+section .footer .button #test dd {
+  flex: 6;
+}
+
+section .footer .button #test dd p {
+  border-bottom: 0;
+  height: 30px;
+}
+
+section .footer .button #test dd span {
+  font-size: 12px;
+  color: #333;
+  padding-left: 18px;
+}
+
+section .footer .button #test dd .price {
+  font-size: 12px;
+  color: #b3bfb4;
+}
+
+section .footer .button #test dd .price span {
+  color: #16c5b3;
+  padding-left: 0px;
+  padding-right: 10px;
+}
+
+section .footer .button #test dd .num {
+  position: absolute;
+  right: 0;
+  top: 63px;
+}
+
+section .box1 {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  background: #fff;
+}
+
+section .box1 dl {
+  width: 33.3%;
+  border-left: 1px solid #ccc;
+  padding-left: 5px;
+  text-align: center;
+}
+
+section .box1 dl dd h4 {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+section .box1 dl h6 {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
