@@ -1,8 +1,12 @@
 require.config({
-    baseUrl: '/js/',
+    baseUrl: "/js/",
     paths: {
-        'jquery': 'lib/jquery-1.11.1',
-        'swiper': 'lib/swiper.min',
-        'index': 'page/index'
+        //库文件
+        'jquery': 'libs/jquery-1.11.1',
+        'handlebars': 'libs/handlebars-v4.0.11',
+
+        //自己写的
+        'index': 'app/index',
+        'render': 'common/render'
     }
 })
