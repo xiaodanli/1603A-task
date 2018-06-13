@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper"></div>
+
+    <script src="./js/libs/jquery.min.js"></script>
+    <script src="./js/libs/handlebars-v4.0.11.js"></script>
+    <script id="han" type='text/x-handlebars-template'>
+        <div>
+            {{#each list}} {{#if isShow}}
+            <a href='{{../baseurl}}{{id}}'>连接</a>
+            <p>{{addIndex @index}} {{title}}:{{author.name}}</p>
+            {{else}}
+            <p>不显示</p> {{/if}} {{/each}}
+        </div>
+    </script>
+    <script>
+        var movie = {
+            baseurl: 'http://tengxun',
+            'list': [{
+                id: 1,
+                title: '唐人街探案2',
+                author: {
+                    name: '陈思成'
+                },
+                isShow: true
+            }, {
+                id: 2,
+                title: '战狼',
+                author: {
+                    name: '吴京'
+                },
+                isShow: true
+            }, {
+                id: 3,
+                title: '缝纫机乐队',
+                author: {
+                    name: '董成鹏'
+                },
+                isShow: false
+            }]
+        }
+        var source = $('#han').html();
+        var template = Handlebars.compile(source);
+        Handlebars.registerHelper("addIndex", function(index) {
+            return index + 1;
+        })
+        var src = template(movie);
+        $('.wrapper').html(src);
+    </script>
+</body>
+
+</html>

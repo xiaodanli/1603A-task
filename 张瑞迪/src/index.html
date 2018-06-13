@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script>
+        document.documentElement.style.fontSize = window.innerWidth / 750 * 100 + 'px'
+    </script>
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="top">
+            头部
+        </header>
+        <main class="con">
+            <h2>2018年资源表</h2>
+            <ul id="list">
+
+            </ul>
+        </main>
+        <footer class="bot">
+            底部
+        </footer>
+    </div>
+    <script id="tpl" type="text/x-handlebars-template">
+        <li>{{#each tit}}
+            <span>{{this}}</span> {{/each}}
+        </li>
+        {{#each list}} {{#limit @index}}
+        <li>
+            <span>{{addIndex @index}}</span>
+            <span>{{name}}</span>
+            <span>{{sex}}</span>
+            <span>{{age}}</span>
+            <span>{{hight}}</span>
+        </li>
+        {{/limit}} {{/each}}
+    </script>
+    <script src="js/libs/require.js"></script>
+    <script>
+        require(["js/main"], function() {
+            require(["index"])
+        })
+    </script>
+</body>
+
+</html>
