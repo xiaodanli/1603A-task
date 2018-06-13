@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./fonts2/iconfont.css">
+</head>
+
+<body>
+    <div class='wrap'>
+        <header>
+            <a href="javascript">
+                <i class="icon iconfont icon-taobao"></i>
+            </a>
+            <a href="javascript">
+                <i class="icon iconfont icon-fenlei"></i>
+            </a>
+            <a href="javascript">
+                <i class="icon iconfont icon-gengduo"></i>
+            </a>
+        </header>
+        <section>
+            <h3>通讯录</h3>
+            <ul class='list'></ul>
+            <script type="text/x-handlebars-template" id='list_tpl'>
+                <li>
+                    {{#each title}}
+                        <span>{{this}}</span>
+                    {{/each}}
+                </li>
+                {{#each list}}
+                {{#limit @index}}
+                <li>
+                        <span>{{addIndex @index}}</span>
+                        <span>{{name}}</span>
+                        <span>{{sex}}</span>
+                        <span>{{age}}</span>
+                        <span>{{height}}</span>
+                </li>
+                {{/limit}}
+                {{/each}}
+            </script>
+        </section>
+        <footer>
+            <a href="javascript">
+                <i class="icon iconfont icon-shouye"></i>
+                <span>首页</span>
+            </a>
+            <a href="javascript">
+                <i class="icon iconfont icon-shoucang"></i>
+                <span>收藏</span>
+            </a>
+            <a href="javascript">
+                <i class="icon iconfont icon-wode"></i>
+                <span>我的</span>
+            </a>
+        </footer>
+    </div>
+    <script src="./js/libs/require.js"></script>
+    <script>
+        require(['./js/main.js'], function () {
+            require(['index'])
+        })
+    </script>
+</body>
+
+</html>
