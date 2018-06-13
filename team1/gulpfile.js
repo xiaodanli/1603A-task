@@ -16,7 +16,6 @@ gulp.task('server', function() {
                     return false;
                 }
                 pathname = pathname === '/' ? '/index.html' : pathname;
-                console.log(pathname)
                 if (pathname === '/api/swiper') {
                     res.end(fs.readFileSync(path.join(__dirname, 'src', 'data', 'data.json')))
                 } else {

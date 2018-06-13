@@ -11,8 +11,8 @@ require(['jquery', 'swiper'], function($, swiper) {
             var set = '';
             res.forEach(function(element) {
                 set += ` <dl>
-                                <dt><i class="iconfont ${element.class}"></i></dt>
-                               <dd>${element.name}</dd>
+                            <dt><i class="iconfont ${element.class}"></i></dt>
+                            <dd>${element.name}</dd>
                          </dl>`
                 $('.swiper-slide').html(set);
             });
