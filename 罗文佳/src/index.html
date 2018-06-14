@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/require.js" data-main="js/main"></script>
+</head>
+
+<body>
+    <div class="wrap">
+        <script type="text/x-handlebars-template" id="headtpl">
+            {{#each this.nav}}
+            <span>
+                   {{this}}
+                </span> {{/each}}
+        </script>
+        <section class="section"></section>
+        <script type="text/x-handlebars-template" id="sectpl">
+            <h1 class="top">{{this.infos}}</h1>
+            <div class="tit">
+                {{#each this.tit}}
+                <span>{{this}}</span> {{/each}}
+            </div>
+            {{#each this.student}} {{#reach @index}}
+            <div class="conts">
+                <span>{{addind @index}}</span>
+                <span>{{name}}</span>
+                <span>{{sex}}</span>
+                <span>{{age}}</span>
+                <span>{{sheight}}</span>
+            </div>
+            {{/reach}} {{/each}}
+        </script>
+    </div>
+</body>
+
+</html>
