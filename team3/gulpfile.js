@@ -9,8 +9,10 @@ var rev = require("gulp-rev");
 var revCollector = require("gulp-rev-collector");
 var url = require("url");
 var fs = require("fs");
-var path = require("path")
-var dataJson = require("./src/data/prod.json");
+var path = require("path");
+var babel = require("gulp-babel");
+var preset = require("babel-preset-es2015");
+var dataJson = require("./data/prod.json");
 
 gulp.task("clean", function() {
 	return gulp.src("build")
