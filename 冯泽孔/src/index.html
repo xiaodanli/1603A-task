@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <header>TOP</header>
+        <section>
+            <ul id="list">
+                <!-- <li>
+                    <p>id</p>
+                    <p>姓名</p>
+                    <p>年龄</p>
+                    <p>特征</p>
+                    <p>爱好</p>
+                </li> -->
+            </ul>
+        </section>
+        <footer>BOTTOM</footer>
+    </div>
+    <script id="render" type="text/x-handlebars-template">
+        <li>
+            {{#each listname}}
+            <p>{{this}}</p>
+            {{/each}}
+        </li>
+        {{#each list}}
+        <li>
+            <p>{{addIndex @index}}</p>
+            <p>{{name}}</p>
+            <p>{{age}}</p>
+            <p>{{dir}}</p>
+            <p>{{love}}</p>
+        </li>
+        {{/each}}
+    </script>
+    <script src="./js/libs/require.js"></script>
+    <script>
+        require(['./js/main.js'], function() {
+            require(['index'], function() {})
+        })
+    </script>
+</body>
+
+</html>
