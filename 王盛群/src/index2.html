@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrap"></div>
+    <script src="js/libs/jquery-1.8.3.min.js"></script>
+    <script src="js/libs/handlebars-v4.0.11.js"></script>
+    <script id="moive" type='text/x-handlebars-template'>
+        {{#each list}} {{#unless isShow}}
+        <a href="{{../baseUrl}}{{id}}">
+            {{title}}主演：{{author.name}}<br>
+        </a> {{/unless}}{{/each}}
+    </script>
+    <script>
+        var moive = $('#moive').html();
+        var template = Handlebars.compile(moive);
+        console.log(template);
+        var obj = {
+            baseUrl: 'http://aiqiyi.com/',
+            list: [{
+                id: 1,
+                title: '麻烦家族',
+                author: {
+                    name: '黄磊'
+                },
+                isShow: true
+            }, {
+                id: 1,
+                title: '暮光之城',
+                author: {
+                    name: '爱德华'
+                },
+                isShow: false
+            }, {
+                id: 1,
+                title: '自杀小队',
+                author: {
+                    name: '小丑'
+                },
+                isShow: false
+            }]
+        }
+        var html = template(obj);
+        console.log(html);
+        $('.wrap').html(html);
+    </script>
+</body>
+
+</html>

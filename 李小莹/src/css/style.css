@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+html,
+body,
+.wrap {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+header,
+footer {
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    line-height: 1rem;
+    background: pink;
+    line-height: 40px;
+    font-size: 24px;
+}
+
+main {
+    width: 100%;
+    flex: 1;
+    background: #eee;
+}
+
+main ul {
+    width: 100%;
+}
+
+main h2 {
+    width: 100%;
+    text-align: center;
+    line-height: 40px;
+    color: green;
+    font-size: 22px;
+}
+
+main ul li {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    line-height: 40px;
+    border-bottom: 1px solid #ccc;
+    font-size: 20px;
+}

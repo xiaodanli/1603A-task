@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="wrap">
+
+        <header>头部</header>
+        <div class="con">
+            <h3>2018信息表</h3>
+            <ul id="list">
+
+            </ul>
+        </div>
+        <footer>底部</footer>
+    </div>
+
+    <!-- handlebars 必须-->
+    <script id="tpl" type="text/x-handlebars-template">
+        <!-- 渲染 -->
+        <li>
+            {{#each tit}}<span> {{this}}</span>{{/each}}
+
+        </li>
+
+        {{#each list}} {{#limit @index}}
+        <li><span>{{addIndex @index}}</span><span>{{name}}</span><span>{{age}}</span><span>{{height}}</span><span>{{sex}}</span></li>
+        {{/limit}} {{/each}}
+    </script>
+    <!-- 引入require -->
+    <script src="./js/lib/require.js"></script>
+    <script>
+        // 引入模块
+        require(['./js/main.js'], function() {
+            require(['index'])
+        })
+    </script>
+</body>
+
+</html>

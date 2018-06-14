@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+            张书童智障
+        </header>
+        <main>
+            <h4>2018最新名单</h4>
+            <ul id="list">
+                <!-- <li><span>学号</span><span>姓名</span><span>性别</span><span>年龄</span><span>身高</span></li>
+                <li>
+                    <span>1001</span>
+                    <span>张书童</span>
+                    <span>男</span>
+                    <span>20</span>
+                    <span>150</span>
+                </li> -->
+            </ul>
+        </main>
+        <footer>页脚</footer>
+    </div>
+    <script id="form" type='text/x-handlebars-template'>
+        <li>
+            {{#each tit}}
+            <span>{{this}}</span>{{/each}}
+        </li>
+        {{#each list}}{{#limit @index}}
+        <li>
+            <span>{{addIndex @index}}</span>
+            <span>{{name}}</span>
+            <span>{{sex}}</span>
+            <span>{{age}}</span>
+            <span>{{height}}</span>
+        </li>
+        {{/limit}} {{/each}}
+    </script>
+    <script src="./js/libs/require.js"></script>
+    <script>
+        require(['./js/main'], function() {
+            require(['index'])
+        })
+    </script>
+</body>
+
+</html>

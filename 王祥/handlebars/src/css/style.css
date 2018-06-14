@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+html,
+body,
+.wrap,
+.box {
+    width: 100%;
+    height: 100%;
+}
+
+.wrap {
+    font-size: .32rem;
+}
+
+ul {
+    width: 100%;
+}
+
+ul li {
+    width: 100%;
+    height: .8rem;
+    line-height: .8rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+ul li span {
+    text-align: center;
+    flex: 1;
+}

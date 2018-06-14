@@ -1,0 +1,110 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-size: .14rem;
+  font-style: normal;
+  font-weight: normal;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+html {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+  font-size: 625%;
+}
+
+img,
+div,
+body,
+html,
+ul,
+li,
+a {
+  -webkit-touch-callout: none;
+}
+
+input,
+button {
+  outline: 0;
+}
+
+/*  input,textarea,button{
+ -webkit-appearance: none;
+ -moz-appearance: none ;
+ appearance: none ;
+} */
+button {
+  cursor: pointer;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: red;
+}
+
+html,
+body,
+.wrap {
+  overflow-x: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.wrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  width: 100%;
+  height: .45rem;
+  line-height: .45rem;
+  background: pink;
+  text-align: center;
+}
+
+section {
+  width: 100%;
+  height: 100%;
+  background: #eee;
+}
+
+section h2 {
+  font-size: .18rem;
+  color: greenyellow;
+  text-align: center;
+  line-height: .45rem;
+}
+
+section ul {
+  width: 100%;
+}
+
+section ul li {
+  width: 100%;
+  line-height: .45rem;
+  border-bottom: .01rem solid skyblue;
+  display: flex;
+}
+
+section ul li span {
+  flex: 1;
+  text-align: center;
+}
+
+footer {
+  width: 100%;
+  height: .45rem;
+  background: pink;
+  text-align: center;
+  line-height: .45rem;
+}
